@@ -95,17 +95,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>Gegeben ist ein Array arr = [2,3,4] 1. Hängen Sie ein neues Element (Zahl 100) an das Array. 1. Geben Sie das aktualisierte Array in der Schleife aus.</p>
-<div class="cell" data-jupyter="{&quot;source_hidden&quot;:true}" data-execution_count="7">
+<div class="cell" data-jupyter="{&quot;source_hidden&quot;:true}">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>arr.append(<span class="dv">100</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(arr)):</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(arr[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>2
-3
-4
-100</code></pre>
-</div>
+</details>
 </div>
 <section id="elemente-im-array-tauschen" class="level2">
 <h2 class="anchored" data-anchor-id="elemente-im-array-tauschen">Elemente im Array tauschen</h2>
@@ -113,19 +110,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Tauschen Sie das letzte und das vorletzte Element im Array arr.</li>
 <li>Geben Sie das aktualisierte Array in der Schleife aus.</li>
 </ol>
-<div class="cell" data-jupyter="{&quot;source_hidden&quot;:true}" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>, <span class="dv">100</span>]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>zwischengespeichert <span class="op">=</span> arr[<span class="dv">2</span>]</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>arr[<span class="dv">2</span>] <span class="op">=</span> arr[<span class="dv">3</span>]</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>arr[<span class="dv">3</span>] <span class="op">=</span> zwischengespeichert</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(arr)):</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(arr[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>2
-3
-100
-4</code></pre>
-</div>
+<div class="cell" data-jupyter="{&quot;source_hidden&quot;:true}">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">100</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>zwischengespeichert <span class="op">=</span> arr[<span class="dv">2</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>arr[<span class="dv">2</span>] <span class="op">=</span> arr[<span class="dv">3</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>arr[<span class="dv">3</span>] <span class="op">=</span> zwischengespeichert</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(arr)):</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(arr[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section id="elemente-in-ein-array-an-beliebiger-stelle-einfügen" class="level2">
@@ -134,18 +128,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Beispiel:</p>
 <p>Folgenes Array ist gegeben: orte = [“Mannheim”, “Stuttgart”, “Freiburg”, “Konstanz”]</p>
 <p>Zwischen die beiden Einträge ‘Stuttgart’ und ‘Freiburg’ soll der Ort ‘Esslingen’ eingefügt werden. Über die Funktion append() kann Esslingen an das Ende des bestehenden Arrays angehängt werden.</p>
-<div class="cell" data-jupyter="{&quot;source_hidden&quot;:true}" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>orte <span class="op">=</span> [<span class="st">"Mannheim"</span>, <span class="st">"Stuttgart"</span>, <span class="st">"Freiburg"</span>, <span class="st">"Konstanz"</span>]</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>stelle <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>orte.append(<span class="st">"Esslingen"</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(orte)<span class="op">-</span><span class="dv">1</span>,stelle,<span class="op">-</span><span class="dv">1</span>):</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    zwischengespeichert <span class="op">=</span> orte[i]</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    orte[i] <span class="op">=</span> orte[i<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    orte[i<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> zwischengespeichert</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(orte)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>['Mannheim', 'Stuttgart', 'Freiburg', 'Esslingen', 'Konstanz']</code></pre>
-</div>
+<div class="cell" data-jupyter="{&quot;source_hidden&quot;:true}">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>orte <span class="op">=</span> [<span class="st">"Mannheim"</span>, <span class="st">"Stuttgart"</span>, <span class="st">"Freiburg"</span>, <span class="st">"Konstanz"</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>stelle <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>orte.append(<span class="st">"Esslingen"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(orte)<span class="op">-</span><span class="dv">1</span>,stelle,<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    zwischengespeichert <span class="op">=</span> orte[i]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    orte[i] <span class="op">=</span> orte[i<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    orte[i<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> zwischengespeichert</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(orte)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section id="aufgabe-inhalte-einfügen" class="level2">
@@ -157,63 +151,39 @@ Mit Hilfe der Software soll es möglich sein, an einer bestimmten Stelle einen w
 z. B.: Spielername: Tom - Index: 6<br>
 Das Array kader soll danach folgenden Inhalt haben:<br>
 <code>["Armin", "Batu", "Kai", "Sven", "Paul", "Milan", "Tom", "Goran", "Chris", "Nico","Dennis", "Emin", "Luca"]</code></p>
-<div class="cell" data-scrolled="true" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Hier den Programmcode eingeben und mit STRG+ENTER ausführen</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>kader <span class="op">=</span> [<span class="st">"Armin"</span>, <span class="st">"Batu"</span>, <span class="st">"Kai"</span>, <span class="st">"Sven"</span>, <span class="st">"Paul"</span>, <span class="st">"Milan"</span>, <span class="st">"Goran"</span>, <span class="st">"Chris"</span>,<span class="st">"Nico"</span>, <span class="st">"Dennis"</span>, <span class="st">"Emin"</span>, <span class="st">"Luca"</span>]</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> kader_ausgeben():</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"------------------------"</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Kader"</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"------------------------"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kader)):</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(kader[i])</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> einfuegen_spieler():</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    spielername <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Spielername: "</span>)</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    index <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Index: "</span>))</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Einfügen an letzter Stelle</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    kader.append(spielername)                              </span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Nach vorne wandern, bis an die richtige Position</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kader)<span class="op">-</span><span class="dv">1</span>, index,<span class="op">-</span><span class="dv">1</span>):    </span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>        zwischenspeicher <span class="op">=</span> kader[i<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>        kader[i<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> kader[i]</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>        kader[i] <span class="op">=</span> zwischenspeicher</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    kader_ausgeben()</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="co">#Funktionsaufruf</span></span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>einfuegen_spieler()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdin">
-<pre><code>Spielername:  Tom
-Index:  6</code></pre>
+<div class="cell" data-scrolled="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Hier den Programmcode eingeben und mit STRG+ENTER ausführen</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>kader <span class="op">=</span> [<span class="st">"Armin"</span>, <span class="st">"Batu"</span>, <span class="st">"Kai"</span>, <span class="st">"Sven"</span>, <span class="st">"Paul"</span>, <span class="st">"Milan"</span>, <span class="st">"Goran"</span>, <span class="st">"Chris"</span>,<span class="st">"Nico"</span>, <span class="st">"Dennis"</span>, <span class="st">"Emin"</span>, <span class="st">"Luca"</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> kader_ausgeben():</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"------------------------"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Kader"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"------------------------"</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kader)):</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(kader[i])</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> einfuegen_spieler():</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    spielername <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Spielername: "</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    index <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Index: "</span>))</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Einfügen an letzter Stelle</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    kader.append(spielername)                              </span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Nach vorne wandern, bis an die richtige Position</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kader)<span class="op">-</span><span class="dv">1</span>, index,<span class="op">-</span><span class="dv">1</span>):    </span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>        zwischenspeicher <span class="op">=</span> kader[i<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        kader[i<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> kader[i]</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        kader[i] <span class="op">=</span> zwischenspeicher</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    kader_ausgeben()</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co">#Funktionsaufruf</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>einfuegen_spieler()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>------------------------
-Kader
-------------------------
-Armin
-Batu
-Kai
-Sven
-Paul
-Milan
-Tom
-Goran
-Chris
-Nico
-Dennis
-Emin
-Luca</code></pre>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Array-Inhalte-einfuegen_files/figure-html/003b398a-cde3-4b25-8d27-4f826a386b18-1-3c4804c3-5591-47ef-aa18-f60f5d892c97.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">grafik.png</figcaption>
-</figure>
-</div>
+<p><a href="Array-Inhalte-einfuegen_files/figure-html/003b398a-cde3-4b25-8d27-4f826a386b18-1-3c4804c3-5591-47ef-aa18-f60f5d892c97.png">Struktogramm</a></p>
 </section>
 
 </main>
