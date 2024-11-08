@@ -117,7 +117,7 @@ Schüler: Eva</code></pre>
 </section>
 <section id="aufgabe-2" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-2">Aufgabe 2:</h2>
-<p>Erstelle ein Array mit den Noten von fünf Schülern und finde die beste Note.</p>
+<p>Erstelle ein Array mit den Noten von fünf Schülern <code>noten = [3.0, 2.5, 1.7, 4.0, 2.0]</code> und finde die beste Note.</p>
 <div id="cell-4" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
@@ -135,7 +135,7 @@ Schüler: Eva</code></pre>
 </section>
 <section id="aufgabe-3" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-3">Aufgabe 3:</h2>
-<p>Erstelle ein Array mit den Alter von Schülern. Ermittle die Anzahl der nicht volljährigen Schüler und gebe sie aus.</p>
+<p>Erstelle ein Array mit den Alter von Schülern. <code>alter = [15, 18, 18, 17, 15, 16]</code> Ermittle die Anzahl der nicht volljährigen Schüler und gebe sie aus.</p>
 <div id="cell-6" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
@@ -192,7 +192,7 @@ Schüler: Eva</code></pre>
 </section>
 <section id="aufgabe-6" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-6">Aufgabe 6:</h2>
-<p>Erstelle ein Array mit den Namen von Projekten und sortiere sie alphabetisch mit BubbleSort.</p>
+<p>Erstelle ein Array mit den Namen von Projekten <code>["Webseite", "App", "Datenbank", "Spiel"]</code> und sortiere sie alphabetisch mit BubbleSort.</p>
 <div id="cell-12" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
@@ -217,18 +217,20 @@ Schüler: Eva</code></pre>
 </section>
 <section id="aufgabe-7" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-7">Aufgabe 7:</h2>
-<p>Gegeben sind zwei Arrays: 1. Lehrernamen: <code>lehrer = ["Lisa Mayer", "Manfred Lutz", "Johannes Klug", "Markus Sommer", "Jutta Kaiser"]</code> 2. Jeweilige Lehrerkürzel: <code>kuerzel = ["ma", "lu", "kl", "so", "ka"]</code></p>
+<p>Gegeben sind zwei Arrays:</p>
+<pre><code>1. Lehrernamen: ```lehrer = ["Lisa Mayer", "Manfred Lutz", "Johannes Klug", "Markus Sommer", "Jutta Kaiser"]```
+2. Jeweilige Lehrerkürzel: ```kuerzel = ["ma", "lu", "kl", "so", "ka"]```</code></pre>
 <p>Schreibe ein Programm, dass bei Eingabe eines oben genannten Kürzels der jeweilige Lehrername angezeigt wird.</p>
 <div id="cell-14" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>lehrer <span class="op">=</span> [<span class="st">"Lisa Mayer"</span>, <span class="st">"Manfred Lutz"</span>, <span class="st">"Johannes Klug"</span>, <span class="st">"Markus Sommer"</span>, <span class="st">"Jutta Kaiser"</span>]</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>kuerzel <span class="op">=</span> [<span class="st">"ma"</span>, <span class="st">"lu"</span>, <span class="st">"kl"</span>, <span class="st">"so"</span>, <span class="st">"ka"</span>]</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>kur <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Bitte Lehrerkürzel eingeben:"</span>)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kuerzel)):</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> kuerzel[i] <span class="op">==</span> kur:</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Der volle Name der Lehrkraft mit dem Kürzel"</span>, kur, <span class="st">"ist"</span>, lehrer[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>lehrer <span class="op">=</span> [<span class="st">"Lisa Mayer"</span>, <span class="st">"Manfred Lutz"</span>, <span class="st">"Johannes Klug"</span>, <span class="st">"Markus Sommer"</span>, <span class="st">"Jutta Kaiser"</span>]</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>kuerzel <span class="op">=</span> [<span class="st">"ma"</span>, <span class="st">"lu"</span>, <span class="st">"kl"</span>, <span class="st">"so"</span>, <span class="st">"ka"</span>]</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>kur <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Bitte Lehrerkürzel eingeben:"</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kuerzel)):</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> kuerzel[i] <span class="op">==</span> kur:</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Der volle Name der Lehrkraft mit dem Kürzel"</span>, kur, <span class="st">"ist"</span>, lehrer[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Der volle Name der Lehrkraft mit dem Kürzel kl ist Johannes Klug</code></pre>
