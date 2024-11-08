@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Inhalte aus dem Array entfernen</title>
+<title>Vorbereitung auf die KA-1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,16 +57,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="Inhalte-aus-dem-Array-entfernen_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Inhalte-aus-dem-Array-entfernen_files/libs/quarto-html/quarto.js"></script>
-<script src="Inhalte-aus-dem-Array-entfernen_files/libs/quarto-html/popper.min.js"></script>
-<script src="Inhalte-aus-dem-Array-entfernen_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Inhalte-aus-dem-Array-entfernen_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Inhalte-aus-dem-Array-entfernen_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Inhalte-aus-dem-Array-entfernen_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Inhalte-aus-dem-Array-entfernen_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Inhalte-aus-dem-Array-entfernen_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Inhalte-aus-dem-Array-entfernen_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Vorbereitung-KA1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Vorbereitung-KA1_files/libs/quarto-html/quarto.js"></script>
+<script src="Vorbereitung-KA1_files/libs/quarto-html/popper.min.js"></script>
+<script src="Vorbereitung-KA1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Vorbereitung-KA1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Vorbereitung-KA1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Vorbereitung-KA1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Vorbereitung-KA1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Vorbereitung-KA1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Vorbereitung-KA1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Inhalte aus dem Array entfernen</h1>
+<h1 class="title">Vorbereitung auf die KA-1</h1>
 </div>
 
 
@@ -96,114 +96,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Inhalte-aus-dem-Array-entfernen_files/figure-html/a5971858-4906-4402-a3b4-79c147bf3964-1-d2837af4-e3bb-46b1-a850-326324c95ed3.png" class="img-fluid figure-img"></p>
-<figcaption>grafik.png</figcaption>
-</figure>
-</div>
-<section id="aufgabe-1" class="level1">
-<h1>Aufgabe 1</h1>
-<p>Erstellen Sie einen Zahlenvektor mit den Zahlen [23, 15, 17, 12, 100, 35, 67]</p>
-<ol type="1">
-<li>Löschen Sie das letzte Element aus dem Vektor</li>
-<li>Löschen Sie das erste Element aus dem Vektor</li>
-<li>Löschen Sie ein Element aus der Mitte</li>
-</ol>
-<div id="f80bc656-46d4-4d32-826e-5ae1417008c9" class="cell" data-execution_count="16">
+<section id="aufgabe-1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1">Aufgabe 1:</h2>
+<p>Erstelle ein Array mit den Namen von fünf Schülern [“Anna”, “Ben”, “Clara”, “David”, “Eva”] und gib jeden Namen mit dem Text “Schüler:” davor aus.</p>
+<div id="cell-2" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>zahlen <span class="op">=</span>  [<span class="dv">23</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">12</span>, <span class="dv">100</span>, <span class="dv">35</span>, <span class="dv">67</span>]</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>erg <span class="op">=</span> zahlen[<span class="dv">0</span>:<span class="bu">len</span>(zahlen)<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(erg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>schueler <span class="op">=</span> [<span class="st">"Anna"</span>, <span class="st">"Ben"</span>, <span class="st">"Clara"</span>, <span class="st">"David"</span>, <span class="st">"Eva"</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name <span class="kw">in</span> schueler:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Schüler: "</span> <span class="op">+</span> name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[23, 15, 17, 12, 100, 35]</code></pre>
-</div>
-</div>
-<div id="5afec8bb-eb37-4fe9-a861-e85f7d70b9ba" class="cell" data-execution_count="17">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>zahlen <span class="op">=</span>  [<span class="dv">23</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">12</span>, <span class="dv">100</span>, <span class="dv">35</span>, <span class="dv">67</span>]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>erg <span class="op">=</span> zahlen[<span class="dv">1</span>:<span class="bu">len</span>(zahlen)]</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(erg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[15, 17, 12, 100, 35, 67]</code></pre>
-</div>
-</div>
-<div id="988ec1ea-e097-4948-883b-5967b6230417" class="cell" data-execution_count="15">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>zahlen <span class="op">=</span>  [<span class="dv">23</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">12</span>, <span class="dv">100</span>, <span class="dv">35</span>, <span class="dv">67</span>]</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>,<span class="bu">len</span>(zahlen)<span class="op">-</span><span class="dv">1</span>):</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    zahlen[i] <span class="op">=</span> zahlen[i<span class="op">+</span><span class="dv">1</span>]</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>erg <span class="op">=</span> zahlen[<span class="dv">0</span>:<span class="bu">len</span>(zahlen)<span class="op">-</span><span class="dv">2</span>]</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(erg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[23, 15, 12, 100, 35]</code></pre>
+<pre><code>Schüler: Anna
+Schüler: Ben
+Schüler: Clara
+Schüler: David
+Schüler: Eva</code></pre>
 </div>
 </div>
 </section>
-<section id="aufgabe-2" class="level1">
-<h1>Aufgabe 2</h1>
-<p>Die Software des Trainers der Abteilung Volleyball des Sportvereines Mühlberger SC enthält ein Array mit allen Spielernamen des Mannschaftskaders.<br>
-<code>kader =[Armin", "Batu", "Kai", "Sven", "Paul", "Milan", "Goran", "Chris", "Nico","Dennis", "Emin", "Luca"]</code><br>
-Mit Hilfe der Software soll es möglich sein, den Spieler an einer bestimmten Stelle des Arrays zu entfernen.</p>
-<p>Anwender einzugebenden Stelle, in das Array eingefügt wird.<br>
-z. B.: Spieler entfernen an der Stelle mit dem Index: 4 Das Array kader soll danach folgenden Inhalt haben:<br>
-<code>kader = ["Armin", "Batu", "Kai", "Sven", "Milan", "Goran", "Chris", "Nico","Dennis", "Emin", "Luca"]</code></p>
-<p>Implementieren Sie eine Funktion <code>entferne_spieler()</code>, mit der ein Spieler aus dem Array entfernt wird.</p>
-<div id="a76e4442-a6ba-4109-9246-625acf16fbed" class="cell" data-execution_count="1">
+<section id="aufgabe-2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2">Aufgabe 2:</h2>
+<p>Erstelle ein Array mit den Noten von fünf Schülern und finde die beste Note.</p>
+<div id="cell-4" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Hier den Programmcode eingeben und mit STRG+ENTER ausführen</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>kader <span class="op">=</span> [<span class="st">"Armin"</span>, <span class="st">"Batu"</span>, <span class="st">"Kai"</span>, <span class="st">"Sven"</span>, <span class="st">"Paul"</span>, <span class="st">"Milan"</span>, <span class="st">"Goran"</span>, <span class="st">"Chris"</span>,<span class="st">"Nico"</span>, <span class="st">"Dennis"</span>, <span class="st">"Emin"</span>, <span class="st">"Luca"</span>]</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> kader_ausgeben():</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"------------------------"</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Kader"</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"------------------------"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kader)):</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(kader[i])</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> entferne_spieler():</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    index <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Entferne Spieler an der Stelle mit dem Index: "</span>))</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Spieler rücken nach vorne auf</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(index, <span class="bu">len</span>(kader)<span class="op">-</span><span class="dv">1</span>):    </span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>        kader[i] <span class="op">=</span> kader[i<span class="op">+</span><span class="dv">1</span>]</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="co">#letztes Element 'leeren'</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    kader[<span class="bu">len</span>(kader)<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    kader_ausgeben()</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="co">#Funktionsaufruf</span></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>entferne_spieler()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>noten <span class="op">=</span> [<span class="fl">3.0</span>, <span class="fl">2.5</span>, <span class="fl">1.7</span>, <span class="fl">4.0</span>, <span class="fl">2.0</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>beste_note <span class="op">=</span> noten[<span class="dv">0</span>]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(noten)):</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> noten[i] <span class="op">&lt;</span> beste_note:</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        beste_note <span class="op">=</span> noten[i]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Die beste Note ist:"</span>, beste_note)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Entferne Spieler an der Stelle mit dem Index:  4
-------------------------
-Kader
-------------------------
-Armin
-Batu
-Kai
-Sven
-Milan
-Goran
-Chris
-Nico
-Dennis
-Emin
-Luca
-</code></pre>
+<pre><code>Die beste Note ist: 1.7</code></pre>
 </div>
 </div>
-<p><a href="Inhalte-aus-dem-Array-entfernen_files/figure-html/16f099d2-e623-41c7-9aea-4c9be20bf505-1-1cbebf47-bbee-470a-9f3c-b82530b84816.png">Struktogramm</a></p>
 </section>
 
 </main>
