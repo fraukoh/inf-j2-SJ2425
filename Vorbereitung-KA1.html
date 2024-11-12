@@ -218,19 +218,19 @@ Schüler: Eva</code></pre>
 <section id="aufgabe-7" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-7">Aufgabe 7:</h2>
 <p>Gegeben sind zwei Arrays:</p>
-<pre><code>1. Lehrernamen: ```lehrer = ["Lisa Mayer", "Manfred Lutz", "Johannes Klug", "Markus Sommer", "Jutta Kaiser"]```
-2. Jeweilige Lehrerkürzel: ```kuerzel = ["ma", "lu", "kl", "so", "ka"]```</code></pre>
+<p>Lehrernamen: <code>lehrer = ["Lisa Mayer", "Manfred Lutz", "Johannes Klug", "Markus Sommer", "Jutta Kaiser"]</code><br>
+Jeweilige Lehrerkürzel: <code>kuerzel = ["ma", "lu", "kl", "so", "ka"]</code></p>
 <p>Schreibe ein Programm, dass bei Eingabe eines oben genannten Kürzels der jeweilige Lehrername angezeigt wird.</p>
 <div id="cell-14" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>lehrer <span class="op">=</span> [<span class="st">"Lisa Mayer"</span>, <span class="st">"Manfred Lutz"</span>, <span class="st">"Johannes Klug"</span>, <span class="st">"Markus Sommer"</span>, <span class="st">"Jutta Kaiser"</span>]</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>kuerzel <span class="op">=</span> [<span class="st">"ma"</span>, <span class="st">"lu"</span>, <span class="st">"kl"</span>, <span class="st">"so"</span>, <span class="st">"ka"</span>]</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>kur <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Bitte Lehrerkürzel eingeben:"</span>)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kuerzel)):</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> kuerzel[i] <span class="op">==</span> kur:</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Der volle Name der Lehrkraft mit dem Kürzel"</span>, kur, <span class="st">"ist"</span>, lehrer[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>lehrer <span class="op">=</span> [<span class="st">"Lisa Mayer"</span>, <span class="st">"Manfred Lutz"</span>, <span class="st">"Johannes Klug"</span>, <span class="st">"Markus Sommer"</span>, <span class="st">"Jutta Kaiser"</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>kuerzel <span class="op">=</span> [<span class="st">"ma"</span>, <span class="st">"lu"</span>, <span class="st">"kl"</span>, <span class="st">"so"</span>, <span class="st">"ka"</span>]</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>kur <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Bitte Lehrerkürzel eingeben:"</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kuerzel)):</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> kuerzel[i] <span class="op">==</span> kur:</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Der volle Name der Lehrkraft mit dem Kürzel"</span>, kur, <span class="st">"ist"</span>, lehrer[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Der volle Name der Lehrkraft mit dem Kürzel kl ist Johannes Klug</code></pre>
