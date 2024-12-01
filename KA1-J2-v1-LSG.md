@@ -1,4 +1,4 @@
-# Aufgabe 1:
+# Aufgabe 1 \[3 P\]:
 
 
 Erstellen Sie ein Array mit den Lieblingsfächern
@@ -17,7 +17,7 @@ for i in range(len(lieblingsfaecher)):
     Lieblingsfach: Chemie
     Lieblingsfach: Geschichte
 
-# Aufgabe 2:
+# Aufgabe 2 \[4 P\]:
 
 Erstellen Sie ein Array mit den monatlichen Ausgaben
 `[200, 250, 300, 150, 400, 350, 280, 320, 370, 410, 380, 450]` und
@@ -35,7 +35,7 @@ print("Die Gesamtausgaben der ersten Hälfte des Jahres sind:", erste_haelfte_au
 
     Die Gesamtausgaben der ersten Hälfte des Jahres sind: 1650
 
-# Aufgabe 3:
+# Aufgabe 3 \[4 P\]:
 
 Erstellen Sie ein Array mit den Projekten des Schuljahres
 `["Kunstausstellung", "Sporttag", "Wissenschaftsmesse"]` und fügen Sie
@@ -53,7 +53,7 @@ print("Aktualisierte Projekte:", projekte)
 
     Aktualisierte Projekte: ['Schulwebsite', 'Kunstausstellung', 'Sporttag', 'Wissenschaftsmesse']
 
-# Aufgabe 4:
+# Aufgabe 4 \[4 P\]:
 
 Gegeben sind zwei Arrays:
 
@@ -75,7 +75,7 @@ for i in range(len(kundennummern)):
 
     Der Kunde mit der Kundennummer 003 ist: Hans Müller
 
-# Aufgabe 5:
+# Aufgabe 5 \[6 P\]:
 
 Erstellen Sie ein Array mit den Namen von Autoren
 `["Hermann Hesse", "Franz Kafka", "Thomas Mann", "Bertolt Brecht"]` und
