@@ -13,7 +13,7 @@
 
 ### BubbleSort
 
-[Präsentation](https://link.excalidraw.com/p/readonly/rVJ9uaXxnBjU17OClQP6)
+[Präsentation](https://link.excalidraw.com/p/readonly/OP5JC7EHylH0MZahSPWX)
 
 [BubbleSort: Aufgaben](BubbleSort-Aufgaben.html)
 
@@ -24,8 +24,13 @@
 
 ### SelectionSort
 
-[Präsentation]()
+[Präsentation](https://link.excalidraw.com/p/readonly/rVJ9uaXxnBjU17OClQP6)
 
-[SelectionSort: Aufgaben]()
+[SelectionSort: Aufgaben](SelectionSort-Aufgaben.html)
 
-test
+<iframe width="560" height="315" src="https://www.youtube.com/embed/92BfuxHn2XE?si=6XANI4LcvBF8l0_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+### BubbleSort und SelectionSort im Vergleich
+
+[Vertiefung](Vertiefung-Bubble-und-Selection-im-Vergleich.html)
