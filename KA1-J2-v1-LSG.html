@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Algorithmische Datenstrukturen</title>
+<title>Aufgabe 1:</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,19 +20,53 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="KA1-J2-v1-LSG_files/libs/clipboard/clipboard.min.js"></script>
+<script src="KA1-J2-v1-LSG_files/libs/quarto-html/quarto.js"></script>
+<script src="KA1-J2-v1-LSG_files/libs/quarto-html/popper.min.js"></script>
+<script src="KA1-J2-v1-LSG_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="KA1-J2-v1-LSG_files/libs/quarto-html/anchor.min.js"></script>
+<link href="KA1-J2-v1-LSG_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="KA1-J2-v1-LSG_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="KA1-J2-v1-LSG_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="KA1-J2-v1-LSG_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="KA1-J2-v1-LSG_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -45,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algorithmische Datenstrukturen</h1>
+<h1 class="title">Aufgabe 1:</h1>
 </div>
 
 
@@ -62,31 +96,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arrays" class="level2">
-<h2 class="anchored" data-anchor-id="arrays">Arrays</h2>
-<ol type="1">
-<li><a href="Wiederholung-Array.html">Arrays in python</a></li>
-<li><a href="Array-Aufgaben.html">Array: Aufgaben</a></li>
-<li><a href="Inhalte-aus-dem-Array-entfernen.html">Inhalte aus dem Array entfernen</a></li>
-<li><a href="Array-Inhalte-einfuegen.html">Array: Inhalte einfügen</a></li>
-</ol>
+<p>Erstellen Sie ein Array mit den Lieblingsfächern <code>["Mathematik", "Biologie", "Informatik", "Chemie", "Geschichte"]</code> und geben Sie jedes Fach mit dem Text “Lieblingsfach:” davor aus.</p>
+<div id="cell-2" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lieblingsfaecher <span class="op">=</span> [<span class="st">"Mathematik"</span>, <span class="st">"Biologie"</span>, <span class="st">"Informatik"</span>, <span class="st">"Chemie"</span>, <span class="st">"Geschichte"</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(lieblingsfaecher)):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Lieblingsfach: "</span> <span class="op">+</span> lieblingsfaecher[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Lieblingsfach: Mathematik
+Lieblingsfach: Biologie
+Lieblingsfach: Informatik
+Lieblingsfach: Chemie
+Lieblingsfach: Geschichte</code></pre>
+</div>
+</div>
+<section id="aufgabe-2" class="level1">
+<h1>Aufgabe 2:</h1>
+<p>Erstellen Sie ein Array mit den monatlichen Ausgaben <code>[200, 250, 300, 150, 400, 350, 280, 320, 370, 410, 380, 450]</code> und berechnen Sie die Gesamtausgaben der <strong>ersten Hälfte</strong> des Jahres.</p>
+<p>Hinweis: Verwenden Sie dafür eine Schleife</p>
+<div id="cell-4" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ausgaben <span class="op">=</span> [<span class="dv">200</span>, <span class="dv">250</span>, <span class="dv">300</span>, <span class="dv">150</span>, <span class="dv">400</span>, <span class="dv">350</span>, <span class="dv">280</span>, <span class="dv">320</span>, <span class="dv">370</span>, <span class="dv">410</span>, <span class="dv">380</span>, <span class="dv">450</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>erste_haelfte_ausgaben <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    erste_haelfte_ausgaben <span class="op">=</span> erste_haelfte_ausgaben <span class="op">+</span> ausgaben[i]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Die Gesamtausgaben der ersten Hälfte des Jahres sind:"</span>, erste_haelfte_ausgaben)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Die Gesamtausgaben der ersten Hälfte des Jahres sind: 1650</code></pre>
+</div>
+</div>
 </section>
-<section id="algorithmen-zum-sortieren" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmen-zum-sortieren">Algorithmen zum Sortieren</h2>
-<section id="bubblesort" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort">BubbleSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/rVJ9uaXxnBjU17OClQP6">Präsentation</a></p>
-<p><a href="BubbleSort-Aufgaben.html">BubbleSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cq7SMsQBEUw?si=m6_BrvCqLj3YzXPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="Vorbereitung-KA1.html">Vorbereitung auf die KA-1</a></p>
+<section id="aufgabe-3" class="level1">
+<h1>Aufgabe 3:</h1>
+<p>Erstellen Sie ein Array mit den Projekten des Schuljahres <code>["Kunstausstellung", "Sporttag", "Wissenschaftsmesse"]</code> und fügen Sie das Projekt “Schulwebsite” an der ersten Stelle (=ganz am Anfang) hinzu.</p>
+<div id="cell-6" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>projekte <span class="op">=</span> [<span class="st">"Kunstausstellung"</span>, <span class="st">"Sporttag"</span>, <span class="st">"Wissenschaftsmesse"</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>projekte.append(<span class="st">"Schulwebsite"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(projekte)<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    zwischengespeichert <span class="op">=</span> projekte[i]</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    projekte[i] <span class="op">=</span> projekte[i<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    projekte[i<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> zwischengespeichert</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Aktualisierte Projekte:"</span>, projekte)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Aktualisierte Projekte: ['Schulwebsite', 'Kunstausstellung', 'Sporttag', 'Wissenschaftsmesse']</code></pre>
+</div>
+</div>
 </section>
-<section id="selectionsort" class="level3">
-<h3 class="anchored" data-anchor-id="selectionsort">SelectionSort</h3>
-<p><a href="">Präsentation</a></p>
-<p><a href="">SelectionSort: Aufgaben</a></p>
-<p>test</p>
+<section id="aufgabe-4" class="level1">
+<h1>Aufgabe 4:</h1>
+<p>Gegeben sind zwei Arrays:</p>
+<p><code>kunden = ["Max Mustermann", "Erika Musterfrau", "Hans Müller", "Anna Schmidt", "Peter Meier"]</code><br>
+<code>kundennummern = ["001", "002", "003", "004", "005"]</code></p>
+<p>Schreiben Sie ein Programm, das bei Eingabe einer oben genannten Kundennummer den jeweiligen Kundennamen anzeigt.</p>
+<div id="cell-8" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>kunden <span class="op">=</span> [<span class="st">"Max Mustermann"</span>, <span class="st">"Erika Musterfrau"</span>, <span class="st">"Hans Müller"</span>, <span class="st">"Anna Schmidt"</span>, <span class="st">"Peter Meier"</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>kundennummern <span class="op">=</span> [<span class="st">"001"</span>, <span class="st">"002"</span>, <span class="st">"003"</span>, <span class="st">"004"</span>, <span class="st">"005"</span>]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>eingabe_nummer <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Bitte geben Sie die Kundennummer ein: "</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kundennummern)):</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> eingabe_nummer <span class="op">==</span> kundennummern[i]:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Der Kunde mit der Kundennummer"</span>, eingabe_nummer, <span class="st">"ist:"</span>, kunden[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Der Kunde mit der Kundennummer 003 ist: Hans Müller</code></pre>
+</div>
+</div>
 </section>
+<section id="aufgabe-5" class="level1">
+<h1>Aufgabe 5:</h1>
+<p>Erstellen Sie ein Array mit den Namen von Autoren <code>["Hermann Hesse", "Franz Kafka", "Thomas Mann", "Bertolt Brecht"]</code> und sortieren Sie sie alphabetisch mit BubbleSort.</p>
+<div id="cell-10" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>autoren <span class="op">=</span> [<span class="st">"Hermann Hesse"</span>, <span class="st">"Franz Kafka"</span>, <span class="st">"Thomas Mann"</span>, <span class="st">"Bertolt Brecht"</span>]</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">len</span>(autoren)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># BubbleSort Algorithmus</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n<span class="op">-</span>i<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> autoren[j] <span class="op">&gt;</span> autoren[j<span class="op">+</span><span class="dv">1</span>]:</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>            zwischengespeichert <span class="op">=</span> autoren[j]</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>            autoren[j] <span class="op">=</span> autoren[j<span class="op">+</span><span class="dv">1</span>]</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>            autoren[j<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> zwischengespeichert</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sortierte Autoren:"</span>, autoren)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Sortierte Autoren: ['Bertolt Brecht', 'Franz Kafka', 'Hermann Hesse', 'Thomas Mann']</code></pre>
+</div>
+</div>
 </section>
 
 </main>

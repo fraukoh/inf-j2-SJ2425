@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Algorithmische Datenstrukturen</title>
+<title>Aufgabe 1: SelectionSort – Lottozahlen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,19 +20,53 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="SelectionSort-Aufgaben_files/libs/clipboard/clipboard.min.js"></script>
+<script src="SelectionSort-Aufgaben_files/libs/quarto-html/quarto.js"></script>
+<script src="SelectionSort-Aufgaben_files/libs/quarto-html/popper.min.js"></script>
+<script src="SelectionSort-Aufgaben_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="SelectionSort-Aufgaben_files/libs/quarto-html/anchor.min.js"></script>
+<link href="SelectionSort-Aufgaben_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="SelectionSort-Aufgaben_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="SelectionSort-Aufgaben_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="SelectionSort-Aufgaben_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="SelectionSort-Aufgaben_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -45,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algorithmische Datenstrukturen</h1>
+<h1 class="title">Aufgabe 1: SelectionSort – Lottozahlen</h1>
 </div>
 
 
@@ -62,31 +96,88 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arrays" class="level2">
-<h2 class="anchored" data-anchor-id="arrays">Arrays</h2>
-<ol type="1">
-<li><a href="Wiederholung-Array.html">Arrays in python</a></li>
-<li><a href="Array-Aufgaben.html">Array: Aufgaben</a></li>
-<li><a href="Inhalte-aus-dem-Array-entfernen.html">Inhalte aus dem Array entfernen</a></li>
-<li><a href="Array-Inhalte-einfuegen.html">Array: Inhalte einfügen</a></li>
-</ol>
+<p>Die Zahlen der aktuellen Lottoziehung liegen in der Reihenfolge der Ziehung in einem Array lotto vor <code>[48, 5, 17, 32, 7, 29]</code> und sollen noch sortiert werden. Sie erhalten den Auftrag, ein entsprechendes Programm zu entwickeln, das die Lottozahlen mit Hilfe des Sortieralgorithmus ‘Selection Sort’ sortiert und die sortierten Zahlen in der Konsole ausgibt.</p>
+<div id="cell-2" class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lotto<span class="op">=</span> [<span class="dv">48</span>, <span class="dv">5</span>, <span class="dv">17</span>, <span class="dv">32</span>, <span class="dv">7</span>, <span class="dv">29</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(lotto)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> akt_idx <span class="kw">in</span> <span class="bu">range</span>(laenge<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    min_idx <span class="op">=</span> akt_idx</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(akt_idx <span class="op">+</span> <span class="dv">1</span>, laenge):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Suche nach der niedrigsten Zahl</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> lotto[j] <span class="op">&lt;</span> lotto[min_idx]:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            min_idx <span class="op">=</span> j</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Tausch</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    zwischenspeicher <span class="op">=</span> lotto[akt_idx]</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    lotto[akt_idx] <span class="op">=</span> lotto [min_idx]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    lotto[min_idx] <span class="op">=</span> zwischenspeicher</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lotto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p><a href="SelectionSort-Aufgaben_files/figure-markdown_strict/cell-3-1-image.png">Struktogramm</a></p>
+<section id="aufgabe-2-sortieren-von-büchern" class="level1">
+<h1>Aufgabe 2: Sortieren von Büchern</h1>
+<p>In einer Bibliothek sind die Bücher einer Kategorie durcheinandergeraten. Die Bücher sind durch ihre ISBN-Nummern repräsentiert und in einem Array buecher gespeichert,<br>
+z.B. <code>[9783866801929, 9783957311320, 9783442267743, 9783423214599, 9783442314928]</code>.</p>
+<p>Schreiben Sie ein Programm, das die ISBN-Nummern mit dem Bubblesort-Algorithmus aufsteigend sortiert und die sortierten ISBN-Nummern in der Konsole ausgibt.</p>
+<div id="cell-5" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>isbn <span class="op">=</span> [<span class="dv">9783866801929</span>, <span class="dv">9783957311320</span>, <span class="dv">9783442267743</span>, <span class="dv">9783423214599</span>, <span class="dv">9783442314928</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(isbn)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> akt_idx <span class="kw">in</span> <span class="bu">range</span>(laenge<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    min_idx <span class="op">=</span> akt_idx</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(akt_idx <span class="op">+</span> <span class="dv">1</span>, laenge):</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Suche nach der niedrigsten Zahl</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> isbn[j] <span class="op">&lt;</span> isbn[min_idx]:</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>            min_idx <span class="op">=</span> j</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Tausch</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    zwischenspeicher <span class="op">=</span> isbn[akt_idx]</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    isbn[akt_idx] <span class="op">=</span> isbn [min_idx]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    isbn[min_idx] <span class="op">=</span> zwischenspeicher</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(isbn)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[9783423214599, 9783442267743, 9783442314928, 9783866801929, 9783957311320]</code></pre>
+</div>
+</div>
 </section>
-<section id="algorithmen-zum-sortieren" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmen-zum-sortieren">Algorithmen zum Sortieren</h2>
-<section id="bubblesort" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort">BubbleSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/rVJ9uaXxnBjU17OClQP6">Präsentation</a></p>
-<p><a href="BubbleSort-Aufgaben.html">BubbleSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cq7SMsQBEUw?si=m6_BrvCqLj3YzXPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="Vorbereitung-KA1.html">Vorbereitung auf die KA-1</a></p>
-</section>
-<section id="selectionsort" class="level3">
-<h3 class="anchored" data-anchor-id="selectionsort">SelectionSort</h3>
-<p><a href="">Präsentation</a></p>
-<p><a href="">SelectionSort: Aufgaben</a></p>
-<p>test</p>
-</section>
+<section id="aufgabe-3-sortieren-von-messwerten" class="level1">
+<h1>Aufgabe 3: Sortieren von Messwerten</h1>
+<p>In einem wissenschaftlichen Experiment wurden Messwerte erfasst und in einem Array messwerte gespeichert,<br>
+z.B. <code>[12.5, 7.8, 3.14, 9.7, 6.2]</code>. Die Messwerte sollen nun für die weitere Analyse aufsteigend sortiert werden.</p>
+<p>Entwickeln Sie ein Programm, welches die Messwerte mittels Bubblesort sortiert und sowohl die unsortierten als auch die sortierten Werte in der Konsole ausgibt.</p>
+<div id="cell-7" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>messwerte <span class="op">=</span> [<span class="fl">12.5</span>, <span class="fl">7.8</span>, <span class="fl">3.14</span>, <span class="fl">9.7</span>, <span class="fl">6.2</span>]</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(messwerte)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> akt_idx <span class="kw">in</span> <span class="bu">range</span>(laenge<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    min_idx <span class="op">=</span> akt_idx</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(akt_idx <span class="op">+</span> <span class="dv">1</span>, laenge):</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Suche nach der niedrigsten Zahl</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> messwerte[j] <span class="op">&lt;</span> messwerte[min_idx]:</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>            min_idx <span class="op">=</span> j</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Tausch</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    zwischenspeicher <span class="op">=</span> messwerte[akt_idx]</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    messwerte[akt_idx] <span class="op">=</span> messwerte [min_idx]</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    messwerte[min_idx] <span class="op">=</span> zwischenspeicher</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(messwerte)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[3.14, 6.2, 7.8, 9.7, 12.5]</code></pre>
+</div>
+</div>
 </section>
 
 </main>

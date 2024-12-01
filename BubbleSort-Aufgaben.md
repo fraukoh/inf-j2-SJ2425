@@ -41,19 +41,19 @@ Bubblesort-Algorithmus aufsteigend sortiert und die sortierten
 ISBN-Nummern in der Konsole ausgibt.
 
 ``` python
-messwerte = [9783866801929, 9783957311320, 9783442267743, 9783423214599, 9783442314928]
-laenge = len(messwerte)
+isbn = [9783866801929, 9783957311320, 9783442267743, 9783423214599, 9783442314928]
+laenge = len(isbn)
 
 #Sortieren
 for i in range(1,laenge):
     for j in range(0,laenge-i):
-        if messwerte[j] > messwerte[j+1]:
-            zwischenspeicher = messwerte[j]
-            messwerte[j] = messwerte[j+1]
-            messwerte[j+1] = zwischenspeicher
+        if isbn[j] > isbn[j+1]:
+            zwischenspeicher = isbn[j]
+            isbn[j] = isbn[j+1]
+            isbn[j+1] = zwischenspeicher
 
 #Ausgabe
-print(messwerte)
+print(isbn)
 ```
 
     [9783423214599, 9783442267743, 9783442314928, 9783866801929, 9783957311320]

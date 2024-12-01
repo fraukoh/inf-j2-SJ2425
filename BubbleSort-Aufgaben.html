@@ -127,19 +127,19 @@ z.B. <code>[9783866801929, 9783957311320, 9783442267743, 9783423214599, 97834423
 <div id="cell-5" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>messwerte <span class="op">=</span> [<span class="dv">9783866801929</span>, <span class="dv">9783957311320</span>, <span class="dv">9783442267743</span>, <span class="dv">9783423214599</span>, <span class="dv">9783442314928</span>]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(messwerte)</span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>isbn <span class="op">=</span> [<span class="dv">9783866801929</span>, <span class="dv">9783957311320</span>, <span class="dv">9783442267743</span>, <span class="dv">9783423214599</span>, <span class="dv">9783442314928</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(isbn)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Sortieren</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,laenge):</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,laenge<span class="op">-</span>i):</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> messwerte[j] <span class="op">&gt;</span> messwerte[j<span class="op">+</span><span class="dv">1</span>]:</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            zwischenspeicher <span class="op">=</span> messwerte[j]</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            messwerte[j] <span class="op">=</span> messwerte[j<span class="op">+</span><span class="dv">1</span>]</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            messwerte[j<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> zwischenspeicher</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> isbn[j] <span class="op">&gt;</span> isbn[j<span class="op">+</span><span class="dv">1</span>]:</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            zwischenspeicher <span class="op">=</span> isbn[j]</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            isbn[j] <span class="op">=</span> isbn[j<span class="op">+</span><span class="dv">1</span>]</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            isbn[j<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> zwischenspeicher</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(messwerte)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(isbn)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[9783423214599, 9783442267743, 9783442314928, 9783866801929, 9783957311320]</code></pre>
