@@ -34,3 +34,6 @@
 ### BubbleSort und SelectionSort im Vergleich
 
 [Vertiefung](Vertiefung-Bubble-und-Selection-im-Vergleich.html)
+
+Lassen sich die charakteristischen Unterschiede zwischen BubbleSort und
+SelectionSort in den gezeigten Visualisierungen erkennen?
