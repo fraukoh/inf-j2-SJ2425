@@ -100,6 +100,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <code>mnr =  [1001, 1019, 1014, 1009, 1005, 1002, 1018, 1008, 1003, 1010, 1007, 1004, 1020, 1013, 1015, 1011, 1017, 1012, 1006, 1016]</code><br>
 Wird die eingegebene Mitgliedsnummer gefunden, soll die Meldung „Zutritt gewährt“ ausgegeben werden. Wird die Nummer nicht gefunden, soll die Meldung „Zutritt verweigert“ erscheinen.</p>
 <div id="cell-2" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Mitgliedsnummern</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mnr <span class="op">=</span> [<span class="dv">1001</span>, <span class="dv">1019</span>, <span class="dv">1014</span>, <span class="dv">1009</span>, <span class="dv">1005</span>, <span class="dv">1002</span>, <span class="dv">1018</span>, <span class="dv">1008</span>, <span class="dv">1003</span>, <span class="dv">1010</span>, <span class="dv">1007</span>, <span class="dv">1004</span>, <span class="dv">1020</span>, <span class="dv">1013</span>, <span class="dv">1015</span>, <span class="dv">1011</span>, <span class="dv">1017</span>, <span class="dv">1012</span>, <span class="dv">1006</span>, <span class="dv">1016</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -119,6 +121,7 @@ Wird die eingegebene Mitgliedsnummer gefunden, soll die Meldung „Zutritt gewä
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Zutritt gewährt"</span>)</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Zutritt verweigert"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Mitgliedsnummer eingeben:  1008
 Zutritt gewährt</code></pre>
@@ -156,6 +159,8 @@ Zutritt gewährt</code></pre>
 </table>
 <p>Gibt der Benutzer beispielsweise den Großbuchstaben B ein, soll er als Ausgabe den verschlüsselten Buchstaben D enthalten, gibt er ein E ein soll er eine Ausgabe mit dem Buchstaben P erhalten usw. So kann der Benutzer nach und nach einen Text verschlüsseln. Implementieren Sie unter Anwendung der linearen Suche eine Lösung für die beschriebene Aufga-benstellung.</p>
 <div id="cell-5" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Alphabete</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>alphabet_klar <span class="op">=</span> [<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>, <span class="st">"F"</span>, <span class="st">"G"</span>, <span class="st">"H"</span>, <span class="st">"I"</span>, <span class="st">"J"</span>, <span class="st">"K"</span>, <span class="st">"L"</span>, <span class="st">"M"</span>, <span class="st">"N"</span>, <span class="st">"O"</span>, <span class="st">"P"</span>, <span class="st">"Q"</span>, <span class="st">"R"</span>, <span class="st">"S"</span>, <span class="st">"T"</span>, <span class="st">"U"</span>, <span class="st">"V"</span>, <span class="st">"W"</span>, <span class="st">"X"</span>, <span class="st">"Y"</span>, <span class="st">"Z"</span>]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>alphabet_geheim <span class="op">=</span> [<span class="st">"A"</span>, <span class="st">"D"</span>, <span class="st">"Z"</span>, <span class="st">"V"</span>, <span class="st">"P"</span>, <span class="st">"H"</span>, <span class="st">"W"</span>, <span class="st">"X"</span>, <span class="st">"B"</span>, <span class="st">"Q"</span>, <span class="st">"R"</span>, <span class="st">"C"</span>, <span class="st">"O"</span>, <span class="st">"Y"</span>, <span class="st">"E"</span>, <span class="st">"G"</span>, <span class="st">"U"</span>, <span class="st">"L"</span>, <span class="st">"M"</span>, <span class="st">"F"</span>, <span class="st">"J"</span>, <span class="st">"S"</span>, <span class="st">"T"</span>, <span class="st">"I"</span>, <span class="st">"K"</span>, <span class="st">"N"</span>]</span>
@@ -169,6 +174,7 @@ Zutritt gewährt</code></pre>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Geheimbuchstabe:"</span>, buchstabe_geheim)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Klarbuchstabe:  D
 Geheimbuchstabe: V</code></pre>
@@ -184,6 +190,8 @@ Die Namen aller Spieler des Mannschaftskaders sind in dem Array kader erfasst.</
 <p><code>kader = ['Armin', 'Batu', 'Kai', 'Sven', 'Paul', 'Milan', 'Goran', 'Chris', 'Nico', 'Dennis', 'Emin', 'Luca']</code></p>
 <p>Der erforderliche Algorithmus soll so optimiert sein, dass die Suche im Array kader beendet wird, sobald der gesuchte Spieler gefunden wurde.</p>
 <div id="cell-8" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>kader <span class="op">=</span> [<span class="st">"Armin"</span>, <span class="st">"Batu"</span>, <span class="st">"Kai"</span>, <span class="st">"Sven"</span>, <span class="st">"Paul"</span>, <span class="st">"Milan"</span>, <span class="st">"Goran"</span>, <span class="st">"Chris"</span>, <span class="st">"Nico"</span>, <span class="st">"Dennis"</span>, <span class="st">"Emin"</span>, <span class="st">"Luca"</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>spielername <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Gesuchter Spielername: "</span>)</span>
@@ -202,6 +210,7 @@ Die Namen aller Spieler des Mannschaftskaders sind in dem Array kader erfasst.</
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Spieler ist im Mannschaftskader"</span>)</span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Spieler ist nicht im Mannschaftskader"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Gesuchter Spielername:  Chris
 Spieler ist im Mannschaftskader</code></pre>
