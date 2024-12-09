@@ -73,8 +73,6 @@ for i in range(len(kundennummern)):
         print("Der Kunde mit der Kundennummer", eingabe_nummer, "ist:", kunden[i])
 ```
 
-    Der Kunde mit der Kundennummer 003 ist: Hans Müller
-
 # Aufgabe 5 \[6 P\]:
 
 Erstellen Sie ein Array mit den Namen von Autoren

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Aufgabe 1 [3 P]:</title>
+<title>Aufgabe 1:</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,16 +57,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="KA1-J2-v1-LSG_files/libs/clipboard/clipboard.min.js"></script>
-<script src="KA1-J2-v1-LSG_files/libs/quarto-html/quarto.js"></script>
-<script src="KA1-J2-v1-LSG_files/libs/quarto-html/popper.min.js"></script>
-<script src="KA1-J2-v1-LSG_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="KA1-J2-v1-LSG_files/libs/quarto-html/anchor.min.js"></script>
-<link href="KA1-J2-v1-LSG_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="KA1-J2-v1-LSG_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="KA1-J2-v1-LSG_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="KA1-J2-v1-LSG_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="KA1-J2-v1-LSG_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="LineareSuche_files/libs/clipboard/clipboard.min.js"></script>
+<script src="LineareSuche_files/libs/quarto-html/quarto.js"></script>
+<script src="LineareSuche_files/libs/quarto-html/popper.min.js"></script>
+<script src="LineareSuche_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="LineareSuche_files/libs/quarto-html/anchor.min.js"></script>
+<link href="LineareSuche_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="LineareSuche_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="LineareSuche_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="LineareSuche_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="LineareSuche_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aufgabe 1 [3 P]:</h1>
+<h1 class="title">Aufgabe 1:</h1>
 </div>
 
 
@@ -96,86 +96,118 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Erstellen Sie ein Array mit den Lieblingsfächern <code>["Mathematik", "Biologie", "Informatik", "Chemie", "Geschichte"]</code> und geben Sie jedes Fach mit dem Text “Lieblingsfach:” davor aus.</p>
-<div id="cell-2" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lieblingsfaecher <span class="op">=</span> [<span class="st">"Mathematik"</span>, <span class="st">"Biologie"</span>, <span class="st">"Informatik"</span>, <span class="st">"Chemie"</span>, <span class="st">"Geschichte"</span>]</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(lieblingsfaecher)):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Lieblingsfach: "</span> <span class="op">+</span> lieblingsfaecher[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Implementieren Sie ein Programm, das überprüft, ob ein Besucher der Mitgliederversammlung zu-gangsberechtigt ist. Dafür soll am Eingang die Mitgliedsnummer in das Programm eingegeben werden. Nach der Eingabe der Mitgliedsnummer wird geprüft, ob die eingegebene Nummer existiert. Alle ver¬gebenen Mitgliedsnummern des Vereins sind im Array <code>mnr</code> erfasst.<br>
+<code>mnr =  [1001, 1019, 1014, 1009, 1005, 1002, 1018, 1008, 1003, 1010, 1007, 1004, 1020, 1013, 1015, 1011, 1017, 1012, 1006, 1016]</code><br>
+Wird die eingegebene Mitgliedsnummer gefunden, soll die Meldung „Zutritt gewährt“ ausgegeben werden. Wird die Nummer nicht gefunden, soll die Meldung „Zutritt verweigert“ erscheinen.</p>
+<div id="cell-2" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Mitgliedsnummern</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mnr <span class="op">=</span> [<span class="dv">1001</span>, <span class="dv">1019</span>, <span class="dv">1014</span>, <span class="dv">1009</span>, <span class="dv">1005</span>, <span class="dv">1002</span>, <span class="dv">1018</span>, <span class="dv">1008</span>, <span class="dv">1003</span>, <span class="dv">1010</span>, <span class="dv">1007</span>, <span class="dv">1004</span>, <span class="dv">1020</span>, <span class="dv">1013</span>, <span class="dv">1015</span>, <span class="dv">1011</span>, <span class="dv">1017</span>, <span class="dv">1012</span>, <span class="dv">1006</span>, <span class="dv">1016</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Eingabe</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>nummer <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Mitgliedsnummer eingeben: "</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(mnr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>gefunden <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Suche</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(laenge):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> mnr[i] <span class="op">==</span> nummer:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        gefunden <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> gefunden:</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Zutritt gewährt"</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Zutritt verweigert"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Lieblingsfach: Mathematik
-Lieblingsfach: Biologie
-Lieblingsfach: Informatik
-Lieblingsfach: Chemie
-Lieblingsfach: Geschichte</code></pre>
+<pre><code>Mitgliedsnummer eingeben:  1008
+Zutritt gewährt</code></pre>
 </div>
 </div>
-<section id="aufgabe-2-4-p" class="level1">
-<h1>Aufgabe 2 [4 P]:</h1>
-<p>Erstellen Sie ein Array mit den monatlichen Ausgaben <code>[200, 250, 300, 150, 400, 350, 280, 320, 370, 410, 380, 450]</code> und berechnen Sie die Gesamtausgaben der <strong>ersten Hälfte</strong> des Jahres.</p>
-<p>Hinweis: Verwenden Sie dafür eine Schleife</p>
-<div id="cell-4" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ausgaben <span class="op">=</span> [<span class="dv">200</span>, <span class="dv">250</span>, <span class="dv">300</span>, <span class="dv">150</span>, <span class="dv">400</span>, <span class="dv">350</span>, <span class="dv">280</span>, <span class="dv">320</span>, <span class="dv">370</span>, <span class="dv">410</span>, <span class="dv">380</span>, <span class="dv">450</span>]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>erste_haelfte_ausgaben <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    erste_haelfte_ausgaben <span class="op">=</span> erste_haelfte_ausgaben <span class="op">+</span> ausgaben[i]</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Die Gesamtausgaben der ersten Hälfte des Jahres sind:"</span>, erste_haelfte_ausgaben)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="LineareSuche_files/figure-markdown_strict/cell-3-1-24a4adc0-270a-420e-aefd-db9fe1eebc64.png">Struktogramm</a></p>
+<section id="aufgabe-2-lineare-suche-verschlüsselung-von-buchstaben" class="level1">
+<h1>Aufgabe 2: Lineare Suche – Verschlüsselung von Buchstaben</h1>
+<p>Die Verschlüsselung wird im Zeitalter der Digitalisierung immer wichtiger. Mit Hilfe einer einfachen Verschlüsselungstechnik (Transposition) sollen einzelne Großbuchstaben verschlüsselt werden. Dazu wurden die Buchstaben des Alphabets im Array <code>alphabet_klar</code> und die Buchstaben für die Verschlüsselung im Array <code>alphabet_geheim</code> erfasst.</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td>Klartext:</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+<td>E</td>
+<td>F</td>
+<td>usw.</td>
+<td>Array: alphabet_klar</td>
+</tr>
+<tr class="even">
+<td>verschlüsselter Text:</td>
+<td>A</td>
+<td>D</td>
+<td>Z</td>
+<td>V</td>
+<td>P</td>
+<td>H</td>
+<td>usw.</td>
+<td>Array: alphabet_geheim</td>
+</tr>
+</tbody>
+</table>
+<p>Gibt der Benutzer beispielsweise den Großbuchstaben B ein, soll er als Ausgabe den verschlüsselten Buchstaben D enthalten, gibt er ein E ein soll er eine Ausgabe mit dem Buchstaben P erhalten usw. So kann der Benutzer nach und nach einen Text verschlüsseln. Implementieren Sie unter Anwendung der linearen Suche eine Lösung für die beschriebene Aufga-benstellung.</p>
+<div id="cell-5" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Alphabete</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>alphabet_klar <span class="op">=</span> [<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>, <span class="st">"F"</span>, <span class="st">"G"</span>, <span class="st">"H"</span>, <span class="st">"I"</span>, <span class="st">"J"</span>, <span class="st">"K"</span>, <span class="st">"L"</span>, <span class="st">"M"</span>, <span class="st">"N"</span>, <span class="st">"O"</span>, <span class="st">"P"</span>, <span class="st">"Q"</span>, <span class="st">"R"</span>, <span class="st">"S"</span>, <span class="st">"T"</span>, <span class="st">"U"</span>, <span class="st">"V"</span>, <span class="st">"W"</span>, <span class="st">"X"</span>, <span class="st">"Y"</span>, <span class="st">"Z"</span>]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>alphabet_geheim <span class="op">=</span> [<span class="st">"A"</span>, <span class="st">"D"</span>, <span class="st">"Z"</span>, <span class="st">"V"</span>, <span class="st">"P"</span>, <span class="st">"H"</span>, <span class="st">"W"</span>, <span class="st">"X"</span>, <span class="st">"B"</span>, <span class="st">"Q"</span>, <span class="st">"R"</span>, <span class="st">"C"</span>, <span class="st">"O"</span>, <span class="st">"Y"</span>, <span class="st">"E"</span>, <span class="st">"G"</span>, <span class="st">"U"</span>, <span class="st">"L"</span>, <span class="st">"M"</span>, <span class="st">"F"</span>, <span class="st">"J"</span>, <span class="st">"S"</span>, <span class="st">"T"</span>, <span class="st">"I"</span>, <span class="st">"K"</span>, <span class="st">"N"</span>]</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Eingabe</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>buchstabe_klar <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Klarbuchstabe: "</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(alphabet_klar)):</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> buchstabe_klar <span class="op">==</span> alphabet_klar[i]:</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        buchstabe_geheim <span class="op">=</span> alphabet_geheim[i]</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Geheimbuchstabe:"</span>, buchstabe_geheim)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Die Gesamtausgaben der ersten Hälfte des Jahres sind: 1650</code></pre>
+<pre><code>Klarbuchstabe:  D
+Geheimbuchstabe: V</code></pre>
 </div>
 </div>
+<p><a href="LineareSuche_files/figure-markdown_strict/cell-6-1-99d13177-02c6-48f0-9671-365e2dcf9918.png">Struktogramm</a></p>
 </section>
-<section id="aufgabe-3-4-p" class="level1">
-<h1>Aufgabe 3 [4 P]:</h1>
-<p>Erstellen Sie ein Array mit den Projekten des Schuljahres <code>["Kunstausstellung", "Sporttag", "Wissenschaftsmesse"]</code> und fügen Sie das Projekt “Schulwebsite” an der ersten Stelle (=ganz am Anfang) hinzu.</p>
-<div id="cell-6" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>projekte <span class="op">=</span> [<span class="st">"Kunstausstellung"</span>, <span class="st">"Sporttag"</span>, <span class="st">"Wissenschaftsmesse"</span>]</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>projekte.append(<span class="st">"Schulwebsite"</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(projekte)<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>):</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    zwischengespeichert <span class="op">=</span> projekte[i]</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    projekte[i] <span class="op">=</span> projekte[i<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    projekte[i<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> zwischengespeichert</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Aktualisierte Projekte:"</span>, projekte)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="aufgabe-3-volleyball-spieler-suchen" class="level1">
+<h1>Aufgabe 3: Volleyball – Spieler suchen</h1>
+<p>Der Trainer der Abteilung Volleyball des Sportvereins Mühlberger SC möchte eine Erweiterung seiner Software.<br>
+Nach der Eingabe eines Spielernamens möchte er eine Information angezeigt bekommen, ob der Spieler im Mannschaftskader ist oder nicht.<br>
+Die Namen aller Spieler des Mannschaftskaders sind in dem Array kader erfasst.</p>
+<p><code>kader = ['Armin', 'Batu', 'Kai', 'Sven', 'Paul', 'Milan', 'Goran', 'Chris', 'Nico', 'Dennis', 'Emin', 'Luca']</code></p>
+<p>Der erforderliche Algorithmus soll so optimiert sein, dass die Suche im Array kader beendet wird, sobald der gesuchte Spieler gefunden wurde.</p>
+<div id="cell-8" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>kader <span class="op">=</span> [<span class="st">"Armin"</span>, <span class="st">"Batu"</span>, <span class="st">"Kai"</span>, <span class="st">"Sven"</span>, <span class="st">"Paul"</span>, <span class="st">"Milan"</span>, <span class="st">"Goran"</span>, <span class="st">"Chris"</span>, <span class="st">"Nico"</span>, <span class="st">"Dennis"</span>, <span class="st">"Emin"</span>, <span class="st">"Luca"</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>spielername <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Gesuchter Spielername: "</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>gefunden <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>zaehler <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Suche</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> gefunden <span class="op">==</span> <span class="va">False</span> <span class="kw">and</span> zaehler <span class="op">&lt;</span> <span class="bu">len</span>(kader):</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> spielername <span class="op">==</span> kader[zaehler]:</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        gefunden <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        zaehler <span class="op">=</span> zaehler <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausgabe</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> gefunden:</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Spieler ist im Mannschaftskader"</span>)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Spieler ist nicht im Mannschaftskader"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Aktualisierte Projekte: ['Schulwebsite', 'Kunstausstellung', 'Sporttag', 'Wissenschaftsmesse']</code></pre>
+<pre><code>Gesuchter Spielername:  Chris
+Spieler ist im Mannschaftskader</code></pre>
 </div>
 </div>
-</section>
-<section id="aufgabe-4-4-p" class="level1">
-<h1>Aufgabe 4 [4 P]:</h1>
-<p>Gegeben sind zwei Arrays:</p>
-<p><code>kunden = ["Max Mustermann", "Erika Musterfrau", "Hans Müller", "Anna Schmidt", "Peter Meier"]</code><br>
-<code>kundennummern = ["001", "002", "003", "004", "005"]</code></p>
-<p>Schreiben Sie ein Programm, das bei Eingabe einer oben genannten Kundennummer den jeweiligen Kundennamen anzeigt.</p>
-<div id="cell-8" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>kunden <span class="op">=</span> [<span class="st">"Max Mustermann"</span>, <span class="st">"Erika Musterfrau"</span>, <span class="st">"Hans Müller"</span>, <span class="st">"Anna Schmidt"</span>, <span class="st">"Peter Meier"</span>]</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>kundennummern <span class="op">=</span> [<span class="st">"001"</span>, <span class="st">"002"</span>, <span class="st">"003"</span>, <span class="st">"004"</span>, <span class="st">"005"</span>]</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>eingabe_nummer <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Bitte geben Sie die Kundennummer ein: "</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(kundennummern)):</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> eingabe_nummer <span class="op">==</span> kundennummern[i]:</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Der Kunde mit der Kundennummer"</span>, eingabe_nummer, <span class="st">"ist:"</span>, kunden[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="aufgabe-5-6-p" class="level1">
-<h1>Aufgabe 5 [6 P]:</h1>
-<p>Erstellen Sie ein Array mit den Namen von Autoren <code>["Hermann Hesse", "Franz Kafka", "Thomas Mann", "Bertolt Brecht"]</code> und sortieren Sie sie alphabetisch mit BubbleSort.</p>
-<div id="cell-10" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>autoren <span class="op">=</span> [<span class="st">"Hermann Hesse"</span>, <span class="st">"Franz Kafka"</span>, <span class="st">"Thomas Mann"</span>, <span class="st">"Bertolt Brecht"</span>]</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">len</span>(autoren)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># BubbleSort Algorithmus</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n<span class="op">-</span>i<span class="op">-</span><span class="dv">1</span>):</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> autoren[j] <span class="op">&gt;</span> autoren[j<span class="op">+</span><span class="dv">1</span>]:</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>            zwischengespeichert <span class="op">=</span> autoren[j]</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>            autoren[j] <span class="op">=</span> autoren[j<span class="op">+</span><span class="dv">1</span>]</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>            autoren[j<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> zwischengespeichert</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sortierte Autoren:"</span>, autoren)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Sortierte Autoren: ['Bertolt Brecht', 'Franz Kafka', 'Hermann Hesse', 'Thomas Mann']</code></pre>
-</div>
-</div>
+<p><a href="/LineareSuche_files/figure-markdown_strict/cell-9-1-18b9c6b5-9852-4187-b16d-562a1c318d99.png">Struktogramm</a></p>
 </section>
 
 </main>

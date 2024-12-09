@@ -37,3 +37,10 @@
 
 Lassen sich die charakteristischen Unterschiede zwischen BubbleSort und
 SelectionSort in den gezeigten Visualisierungen erkennen?
+
+## Suchalgorithmen
+
+### Lineare Suche
+
+[Präsentation](https://link.excalidraw.com/p/readonly/qMMtwRlFAVGLah2SRQkQ)
+[Aufgaben](LineareSuche.html)
