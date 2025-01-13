@@ -43,4 +43,17 @@ SelectionSort in den gezeigten Visualisierungen erkennen?
 ### Lineare Suche
 
 [Präsentation](https://link.excalidraw.com/p/readonly/qMMtwRlFAVGLah2SRQkQ)
+
 [Aufgaben](LineareSuche.html)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HiYh4LYcLRc?si=EVjVMOB_dyjvvFND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+### Binäre Suche
+
+[Präsentation](https://link.excalidraw.com/p/readonly/Mckodc1s6pCUt2EDBQxL)
+
+[Aufgaben]()
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XJUgCSejezQ?si=x9gDDJ3AkwfAGVwm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
