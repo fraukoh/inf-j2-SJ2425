@@ -60,6 +60,8 @@ SelectionSort in den gezeigten Visualisierungen erkennen?
 
 ## Dynamische Datenstrukturen
 
+### Verkettete Listen
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x0k8MjvWNWw?si=r03sMbkfa0E_hjpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 
@@ -70,4 +72,4 @@ https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/verkettete-liste
 [das Whiteboard für Ihre
 Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/3p5SEywB4IZ)
 
-[Aufgaben]()
+[Übungsaufgaben](VerketteteListen-Aufgaben.html)
