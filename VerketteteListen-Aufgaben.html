@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Algorithmische Datenstrukturen</title>
+<title>Aufgabe 1: Tagesplan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,16 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="VerketteteListen-Aufgaben_files/libs/clipboard/clipboard.min.js"></script>
+<script src="VerketteteListen-Aufgaben_files/libs/quarto-html/quarto.js"></script>
+<script src="VerketteteListen-Aufgaben_files/libs/quarto-html/popper.min.js"></script>
+<script src="VerketteteListen-Aufgaben_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="VerketteteListen-Aufgaben_files/libs/quarto-html/anchor.min.js"></script>
+<link href="VerketteteListen-Aufgaben_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="VerketteteListen-Aufgaben_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="VerketteteListen-Aufgaben_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="VerketteteListen-Aufgaben_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="VerketteteListen-Aufgaben_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algorithmische Datenstrukturen</h1>
+<h1 class="title">Aufgabe 1: Tagesplan</h1>
 </div>
 
 
@@ -62,63 +62,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arrays" class="level2">
-<h2 class="anchored" data-anchor-id="arrays">Arrays</h2>
+<p>Erstellen Sie eine verkettete Liste, die den Tagesplan einer Person speichert:</p>
+<ul>
+<li><strong>8:00 – Frühstück</strong></li>
+<li><strong>10:00 – Meeting</strong></li>
+<li><strong>12:00 – Mittagessen</strong></li>
+<li><strong>15:00 – Spaziergang</strong></li>
+<li><strong>18:00 – Abendessen</strong></li>
+</ul>
+<p>Führen Sie folgende Änderungen durch:</p>
 <ol type="1">
-<li><a href="Wiederholung-Array.html">Arrays in python</a></li>
-<li><a href="Array-Aufgaben.html">Array: Aufgaben</a></li>
-<li><a href="Inhalte-aus-dem-Array-entfernen.html">Inhalte aus dem Array entfernen</a></li>
-<li><a href="Array-Inhalte-einfuegen.html">Array: Inhalte einfügen</a></li>
+<li>Fügen Sie <strong>9:00 – Telefonat</strong> zwischen Frühstück und Meeting ein.</li>
+<li>Entfernen Sie den Eintrag <strong>15:00 – Spaziergang</strong>.</li>
+<li>Fügen Sie <strong>20:00 – Filmabend</strong> am Ende der Liste hinzu.</li>
 </ol>
-</section>
-<section id="algorithmen-zum-sortieren" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmen-zum-sortieren">Algorithmen zum Sortieren</h2>
-<section id="bubblesort" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort">BubbleSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/OP5JC7EHylH0MZahSPWX">Präsentation</a></p>
-<p><a href="BubbleSort-Aufgaben.html">BubbleSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cq7SMsQBEUw?si=m6_BrvCqLj3YzXPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="Vorbereitung-KA1.html">Vorbereitung auf die KA-1</a></p>
-</section>
-<section id="selectionsort" class="level3">
-<h3 class="anchored" data-anchor-id="selectionsort">SelectionSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/rVJ9uaXxnBjU17OClQP6">Präsentation</a></p>
-<p><a href="SelectionSort-Aufgaben.html">SelectionSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/92BfuxHn2XE?si=6XANI4LcvBF8l0_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-<section id="bubblesort-und-selectionsort-im-vergleich" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort-und-selectionsort-im-vergleich">BubbleSort und SelectionSort im Vergleich</h3>
-<p><a href="Vertiefung-Bubble-und-Selection-im-Vergleich.html">Vertiefung</a></p>
-<p>Lassen sich die charakteristischen Unterschiede zwischen BubbleSort und SelectionSort in den gezeigten Visualisierungen erkennen?</p>
-</section>
-</section>
-<section id="suchalgorithmen" class="level2">
-<h2 class="anchored" data-anchor-id="suchalgorithmen">Suchalgorithmen</h2>
-<section id="lineare-suche" class="level3">
-<h3 class="anchored" data-anchor-id="lineare-suche">Lineare Suche</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/qMMtwRlFAVGLah2SRQkQ">Präsentation</a></p>
-<p><a href="LineareSuche.html">Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HiYh4LYcLRc?si=EVjVMOB_dyjvvFND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-<section id="binäre-suche" class="level3">
-<h3 class="anchored" data-anchor-id="binäre-suche">Binäre Suche</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/Mckodc1s6pCUt2EDBQxL">Präsentation</a></p>
-<p><a href="BinaereSuche.html">Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XJUgCSejezQ?si=x9gDDJ3AkwfAGVwm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-</section>
-<section id="dynamische-datenstrukturen" class="level2">
-<h2 class="anchored" data-anchor-id="dynamische-datenstrukturen">Dynamische Datenstrukturen</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x0k8MjvWNWw?si=r03sMbkfa0E_hjpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7600_Verkettete_Liste.pdf">Arbeitsblatt</a><br>
-Quelle: https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/verkettete-listen</p>
-<p><a href="https://link.excalidraw.com/l/7rq4dRSruIo/3p5SEywB4IZ">das Whiteboard für Ihre Lösungen</a></p>
-<p><a href="VerketteteListen-Aufgaben.html">Übungsaufgaben</a></p>
+<p>Zeichnen Sie die Struktur der Liste nach jedem Schritt.</p>
+<section id="aufgabe-2-einkaufsliste" class="level1">
+<h1>Aufgabe 2: Einkaufsliste</h1>
+<p>Erstellen Sie eine verkettete Liste, die folgende Einkaufsliste speichert:</p>
+<ul>
+<li><strong>Milch</strong></li>
+<li><strong>Brot</strong></li>
+<li><strong>Eier</strong></li>
+<li><strong>Butter</strong></li>
+</ul>
+<p>Führen Sie folgende Änderungen durch:</p>
+<ol type="1">
+<li>Fügen Sie <strong>Käse</strong> an die 3. Position ein.</li>
+<li>Entfernen Sie <strong>Butter</strong> aus der Liste.</li>
+<li>Fügen Sie <strong>Äpfel</strong> am Ende der Liste hinzu.</li>
+</ol>
+<p>Zeichnen Sie die Struktur der Liste nach jedem Schritt.</p>
 </section>
 
 </main>

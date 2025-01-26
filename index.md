@@ -53,7 +53,21 @@ SelectionSort in den gezeigten Visualisierungen erkennen?
 
 [Präsentation](https://link.excalidraw.com/p/readonly/Mckodc1s6pCUt2EDBQxL)
 
-[Aufgaben]()
+[Aufgaben](BinaereSuche.html)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XJUgCSejezQ?si=x9gDDJ3AkwfAGVwm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
+
+## Dynamische Datenstrukturen
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x0k8MjvWNWw?si=r03sMbkfa0E_hjpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+[Arbeitsblatt](https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7600_Verkettete_Liste.pdf)  
+Quelle:
+https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/verkettete-listen
+
+[das Whiteboard für Ihre
+Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/3p5SEywB4IZ)
+
+[Aufgaben]()

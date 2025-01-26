@@ -39,11 +39,7 @@ else:
     print("Sie haben leider nicht gewonnen :-(")
 ```
 
-<figure>
-<img src="BinaereSuche_files/figure-markdown_strict/cell-3-1-image.png"
-alt="image.png" />
-<figcaption aria-hidden="true">image.png</figcaption>
-</figure>
+[Struktogramm](BinaereSuche_files/figure-html/cell-3-1-image.png)
 
 # Aufgabe 2: Binäre Suche – Mitgliedsnummer
 
@@ -98,11 +94,7 @@ else:
     print("Zutritt verweigert")
 ```
 
-<figure>
-<img src="BinaereSuche_files/figure-markdown_strict/cell-6-1-image.png"
-alt="image.png" />
-<figcaption aria-hidden="true">image.png</figcaption>
-</figure>
+[Struktogramm](BinaereSuche_files/figure-html/cell-6-1-image.png)
 
 # Aufgabe 3:
 
@@ -181,8 +173,4 @@ Suche bzw. der binären Suche gefunden wurde.
 </tbody>
 </table>
 
-<figure>
-<img src="BinaereSuche_files/figure-markdown_strict/cell-14-1-image.png"
-alt="image.png" />
-<figcaption aria-hidden="true">image.png</figcaption>
-</figure>
+[Lösung](BinaereSuche_files/figure-html/cell-14-1-image.png)
