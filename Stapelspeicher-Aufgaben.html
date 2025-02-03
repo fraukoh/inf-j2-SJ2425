@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Algorithmische Datenstrukturen</title>
+<title>Aufgabe: Stapelspeicher-Spiel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,16 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Stapelspeicher-Aufgaben_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Stapelspeicher-Aufgaben_files/libs/quarto-html/quarto.js"></script>
+<script src="Stapelspeicher-Aufgaben_files/libs/quarto-html/popper.min.js"></script>
+<script src="Stapelspeicher-Aufgaben_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Stapelspeicher-Aufgaben_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Stapelspeicher-Aufgaben_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Stapelspeicher-Aufgaben_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Stapelspeicher-Aufgaben_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Stapelspeicher-Aufgaben_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Stapelspeicher-Aufgaben_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algorithmische Datenstrukturen</h1>
+<h1 class="title">Aufgabe: Stapelspeicher-Spiel</h1>
 </div>
 
 
@@ -62,71 +62,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arrays" class="level2">
-<h2 class="anchored" data-anchor-id="arrays">Arrays</h2>
-<ol type="1">
-<li><a href="Wiederholung-Array.html">Arrays in python</a></li>
-<li><a href="Array-Aufgaben.html">Array: Aufgaben</a></li>
-<li><a href="Inhalte-aus-dem-Array-entfernen.html">Inhalte aus dem Array entfernen</a></li>
-<li><a href="Array-Inhalte-einfuegen.html">Array: Inhalte einfügen</a></li>
-</ol>
+<p>Bei einem Spiel müssen alle drei Scheiben des linken Stapelplatzes <strong>S1</strong> auf den rechten Stapelplatz <strong>S3</strong> übertragen werden, wie unten dargestellt.</p>
+<section id="anfangszustand" class="level2">
+<h2 class="anchored" data-anchor-id="anfangszustand">Anfangszustand:</h2>
+<p><img src="Stapelspeicher-Aufgaben_files/figure-html/cell-1-2-image.png" class="img-fluid" alt="image.png"> ## Endzustand: <img src="Stapelspeicher-Aufgaben_files/figure-html/cell-1-1-image-2.png" class="img-fluid" alt="image-2.png"> ## Regeln: 1. Die Scheiben können nur nach dem Prinzip <strong>„Stapelspeicher“</strong> bewegt werden (LIFO: Last In, First Out). 2. Die Scheiben dürfen auf alle drei Stapelplätze <strong>S1</strong>, <strong>S2</strong> und <strong>S3</strong> gelegt werden. 3. Es kann nur <strong>eine Scheibe pro Zug</strong> verschoben werden. 4. <strong>Eine dunklere Scheibe darf nicht auf einer helleren Scheibe</strong> liegen.</p>
 </section>
-<section id="algorithmen-zum-sortieren" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmen-zum-sortieren">Algorithmen zum Sortieren</h2>
-<section id="bubblesort" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort">BubbleSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/OP5JC7EHylH0MZahSPWX">Präsentation</a></p>
-<p><a href="BubbleSort-Aufgaben.html">BubbleSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cq7SMsQBEUw?si=m6_BrvCqLj3YzXPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="Vorbereitung-KA1.html">Vorbereitung auf die KA-1</a></p>
+<section id="beispiel-für-einen-zug" class="level2">
+<h2 class="anchored" data-anchor-id="beispiel-für-einen-zug">Beispiel für einen Zug:</h2>
+<p>S1: pop(), S2: push() &gt; Vom Stapelplatz <strong>S1</strong> wird eine Scheibe entnommen und auf den Stapelplatz <strong>S2</strong> gelegt.</p>
 </section>
-<section id="selectionsort" class="level3">
-<h3 class="anchored" data-anchor-id="selectionsort">SelectionSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/rVJ9uaXxnBjU17OClQP6">Präsentation</a></p>
-<p><a href="SelectionSort-Aufgaben.html">SelectionSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/92BfuxHn2XE?si=6XANI4LcvBF8l0_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
+<section id="aufgabe" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe">Aufgabe:</h2>
+<p>Überführen Sie die Scheiben schrittweise unter Verwendung der Befehle <code>pop()</code> und <code>push()</code> vom <strong>Anfangszustand</strong> in den <strong>Endzustand</strong>.</p>
 </section>
-<section id="bubblesort-und-selectionsort-im-vergleich" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort-und-selectionsort-im-vergleich">BubbleSort und SelectionSort im Vergleich</h3>
-<p><a href="Vertiefung-Bubble-und-Selection-im-Vergleich.html">Vertiefung</a></p>
-<p>Lassen sich die charakteristischen Unterschiede zwischen BubbleSort und SelectionSort in den gezeigten Visualisierungen erkennen?</p>
+<section id="aufgabe-palettenlager" class="level1">
+<h1>Aufgabe: Palettenlager</h1>
+<p>Ein Großhändler lagert Waren palettenweise in einem Lager namens <strong>„Palettenlager“</strong>. Das Lager ist so organisiert, dass die Einlagerung und Entnahme von Paletten nur nach dem <strong>LIFO-Prinzip</strong> (Last In, First Out) möglich ist.</p>
+<p>Im Stapelspeicher <code>palettenlager</code> werden die Bestände und Bestandsveränderungen gespeichert. Dafür stehen zwei Operationen zur Verfügung:</p>
+<ul>
+<li><p><strong>Einlagerung:</strong> <code>palettenlager.push(Anzahl)</code> &gt; Es werden <code>Anzahl</code> Paletten in das Lager <code>palettenlager</code> eingelagert.</p></li>
+<li><p><strong>Entnahme:</strong> <code>palettenlager.pop(Anzahl)</code> &gt; Es werden <code>Anzahl</code> Paletten aus dem Lager <code>palettenlager</code> entnommen.</p></li>
+</ul>
+<p>Das Lager ist am <strong>01.03.2025</strong> leer, d.&nbsp;h. der Lagerbestand beträgt 0.</p>
+<section id="bestandsveränderungen-im-märz-2025" class="level2">
+<h2 class="anchored" data-anchor-id="bestandsveränderungen-im-märz-2025">Bestandsveränderungen im März 2025:</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Datum</th>
+<th>Befehl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>03.03.2025</td>
+<td><code>palettenlager.push(60)</code></td>
+</tr>
+<tr class="even">
+<td>07.03.2025</td>
+<td><code>palettenlager.pop(20)</code></td>
+</tr>
+<tr class="odd">
+<td>10.03.2025</td>
+<td><code>palettenlager.push(40)</code></td>
+</tr>
+<tr class="even">
+<td>15.03.2025</td>
+<td><code>palettenlager.pop(50)</code></td>
+</tr>
+<tr class="odd">
+<td>20.03.2025</td>
+<td><code>palettenlager.push(80)</code></td>
+</tr>
+<tr class="even">
+<td>25.03.2025</td>
+<td><code>palettenlager.pop(30)</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<section id="aufgaben" class="level3">
+<h3 class="anchored" data-anchor-id="aufgaben">Aufgaben:</h3>
+<section id="lagerbestand-am-31.03.2025" class="level4">
+<h4 class="anchored" data-anchor-id="lagerbestand-am-31.03.2025">1. Lagerbestand am 31.03.2025</h4>
+<p>Berechnen Sie den Lagerbestand am 31.03.2025.</p>
+</section>
+<section id="höchster-lagerbestand-im-märz" class="level4">
+<h4 class="anchored" data-anchor-id="höchster-lagerbestand-im-märz">2. Höchster Lagerbestand im März</h4>
+<p>Ermitteln Sie den höchsten Lagerbestand im März 2025.</p>
+</section>
+<section id="verfügbarkeit-der-lieferung-vom-10.03.2025" class="level4">
+<h4 class="anchored" data-anchor-id="verfügbarkeit-der-lieferung-vom-10.03.2025">3. Verfügbarkeit der Lieferung vom 10.03.2025</h4>
+<p>Beschreiben Sie, wann die Paletten aus der Lieferung vom <strong>10.03.2025</strong> nicht mehr im Lager vorhanden sind.</p>
 </section>
 </section>
-<section id="suchalgorithmen" class="level2">
-<h2 class="anchored" data-anchor-id="suchalgorithmen">Suchalgorithmen</h2>
-<section id="lineare-suche" class="level3">
-<h3 class="anchored" data-anchor-id="lineare-suche">Lineare Suche</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/qMMtwRlFAVGLah2SRQkQ">Präsentation</a></p>
-<p><a href="LineareSuche.html">Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HiYh4LYcLRc?si=EVjVMOB_dyjvvFND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-<section id="binäre-suche" class="level3">
-<h3 class="anchored" data-anchor-id="binäre-suche">Binäre Suche</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/Mckodc1s6pCUt2EDBQxL">Präsentation</a></p>
-<p><a href="BinaereSuche.html">Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XJUgCSejezQ?si=x9gDDJ3AkwfAGVwm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-</section>
-<section id="dynamische-datenstrukturen" class="level2">
-<h2 class="anchored" data-anchor-id="dynamische-datenstrukturen">Dynamische Datenstrukturen</h2>
-<section id="verkettete-listen" class="level3">
-<h3 class="anchored" data-anchor-id="verkettete-listen">Verkettete Listen</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x0k8MjvWNWw?si=r03sMbkfa0E_hjpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7600_Verkettete_Liste.pdf">Arbeitsblatt</a><br>
-Quelle: https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/verkettete-listen</p>
-<p><a href="https://link.excalidraw.com/l/7rq4dRSruIo/3p5SEywB4IZ">das Whiteboard für Ihre Lösungen</a></p>
-<p><a href="VerketteteListen-Aufgaben.html">Übungsaufgaben</a></p>
-</section>
-<section id="stapelspeicher" class="level3">
-<h3 class="anchored" data-anchor-id="stapelspeicher">Stapelspeicher</h3>
-<p><a href="https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7610_Stapelspeicher.pdf">Arbeitsblatt</a> Quelle: https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/stapelspeicher</p>
-<p><a href="https://link.excalidraw.com/l/7rq4dRSruIo/AIIAt4NbHul">das Whiteboard für die Lösungen</a></p>
-<p><a href="Stapelspeicher-Aufgaben.html">Übungsaufgaben</a></p>
 </section>
 </section>
 
