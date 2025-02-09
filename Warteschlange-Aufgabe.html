@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Algorithmische Datenstrukturen</title>
+<title>Dynamische Datenstrukturen: Übung Warteschlange</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,16 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Warteschlange-Aufgabe_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Warteschlange-Aufgabe_files/libs/quarto-html/quarto.js"></script>
+<script src="Warteschlange-Aufgabe_files/libs/quarto-html/popper.min.js"></script>
+<script src="Warteschlange-Aufgabe_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Warteschlange-Aufgabe_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Warteschlange-Aufgabe_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Warteschlange-Aufgabe_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Warteschlange-Aufgabe_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Warteschlange-Aufgabe_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Warteschlange-Aufgabe_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algorithmische Datenstrukturen</h1>
+<h1 class="title">Dynamische Datenstrukturen: Übung Warteschlange</h1>
 </div>
 
 
@@ -62,83 +62,65 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arrays" class="level2">
-<h2 class="anchored" data-anchor-id="arrays">Arrays</h2>
-<ol type="1">
-<li><a href="Wiederholung-Array.html">Arrays in python</a></li>
-<li><a href="Array-Aufgaben.html">Array: Aufgaben</a></li>
-<li><a href="Inhalte-aus-dem-Array-entfernen.html">Inhalte aus dem Array entfernen</a></li>
-<li><a href="Array-Inhalte-einfuegen.html">Array: Inhalte einfügen</a></li>
-</ol>
+<section id="aufgabe-1-bauer-anton" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-bauer-anton">Aufgabe 1: Bauer Anton</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Warteschlange-Aufgabe_files/figure-html/cell-1-1-294a93cb-6f0f-48b9-b8d2-4b8bd5f358c9.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>Auf dem Bauernhof von Bauer Anton gibt es viele Milchkühe. Das Melken der Kühe auf dem Bauern¬hof übernimmt eine Melkmaschine, die immer eine Kuh melken kann. Damit die Daten wie bspw. Literan-zahl, Qualität usw. gespeichert werden können, tragen die Kühe Chips an einem Halsband. Jede Kuh kann selbst entscheiden, wann sie gemolken wird. Das folgende Schaubild zeigt diesen Vorgang:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Warteschlange-Aufgabe_files/figure-html/cell-1-2-3e49d5ac-0c6e-466d-be75-06ec2061a7bb.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>Jede ankommende Kuh wird mit der Operation <code>ENQUEUE(“name“)</code> der Warteschlange der Melkma-schine hinzugefügt. Ist eine Kuh fertig gemolken, wird sie mit der Operation <code>DEQUEUE()</code> aus der Warteschlange entfernt. Folgender Algorithmus zeigt einen Melkvorgang zu einem bestimmten Zeitpunkt.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Warteschlange-Aufgabe_files/figure-html/cell-1-3-b7531093-ba81-4719-93a7-2ce666ef90a2.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<section id="aufgabe-1.1" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1.1">Aufgabe 1.1:</h3>
+<p>Welche Kühe wurden bereits gemolken?</p>
 </section>
-<section id="algorithmen-zum-sortieren" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmen-zum-sortieren">Algorithmen zum Sortieren</h2>
-<section id="bubblesort" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort">BubbleSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/OP5JC7EHylH0MZahSPWX">Präsentation</a></p>
-<p><a href="BubbleSort-Aufgaben.html">BubbleSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cq7SMsQBEUw?si=m6_BrvCqLj3YzXPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="Vorbereitung-KA1.html">Vorbereitung auf die KA-1</a></p>
+<section id="aufgabe-1.2" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1.2">Aufgabe 1.2:</h3>
+<p>Welche Kuh wird gerade gemolken?</p>
 </section>
-<section id="selectionsort" class="level3">
-<h3 class="anchored" data-anchor-id="selectionsort">SelectionSort</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/rVJ9uaXxnBjU17OClQP6">Präsentation</a></p>
-<p><a href="SelectionSort-Aufgaben.html">SelectionSort: Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/92BfuxHn2XE?si=6XANI4LcvBF8l0_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-<section id="bubblesort-und-selectionsort-im-vergleich" class="level3">
-<h3 class="anchored" data-anchor-id="bubblesort-und-selectionsort-im-vergleich">BubbleSort und SelectionSort im Vergleich</h3>
-<p><a href="Vertiefung-Bubble-und-Selection-im-Vergleich.html">Vertiefung</a></p>
-<p>Lassen sich die charakteristischen Unterschiede zwischen BubbleSort und SelectionSort in den gezeigten Visualisierungen erkennen?</p>
-</section>
-</section>
-<section id="suchalgorithmen" class="level2">
-<h2 class="anchored" data-anchor-id="suchalgorithmen">Suchalgorithmen</h2>
-<section id="lineare-suche" class="level3">
-<h3 class="anchored" data-anchor-id="lineare-suche">Lineare Suche</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/qMMtwRlFAVGLah2SRQkQ">Präsentation</a></p>
-<p><a href="LineareSuche.html">Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HiYh4LYcLRc?si=EVjVMOB_dyjvvFND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-<section id="binäre-suche" class="level3">
-<h3 class="anchored" data-anchor-id="binäre-suche">Binäre Suche</h3>
-<p><a href="https://link.excalidraw.com/p/readonly/Mckodc1s6pCUt2EDBQxL">Präsentation</a></p>
-<p><a href="BinaereSuche.html">Aufgaben</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XJUgCSejezQ?si=x9gDDJ3AkwfAGVwm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
+<section id="aufgabe-1.3" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1.3">Aufgabe 1.3:</h3>
+<p>Wie viele Kühe müssen noch gemolken werden?</p>
 </section>
 </section>
-<section id="dynamische-datenstrukturen" class="level2">
-<h2 class="anchored" data-anchor-id="dynamische-datenstrukturen">Dynamische Datenstrukturen</h2>
-<section id="verkettete-listen" class="level3">
-<h3 class="anchored" data-anchor-id="verkettete-listen">Verkettete Listen</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x0k8MjvWNWw?si=r03sMbkfa0E_hjpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7600_Verkettete_Liste.pdf">Arbeitsblatt</a><br>
-Quelle: https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/verkettete-listen</p>
-<p><a href="https://link.excalidraw.com/l/7rq4dRSruIo/3p5SEywB4IZ">das Whiteboard für Ihre Lösungen</a></p>
-<p><a href="VerketteteListen-Aufgaben.html">Übungsaufgaben</a></p>
+<section id="aufgabe-2-netzwerkdrucker" class="level1">
+<h1>Aufgabe 2: Netzwerkdrucker</h1>
+<p>Ein Netzwerkdrucker erhält im Zeitraum von 10:00 bis 11:00 Uhr mehrere Druckaufträge, die in einer Warteschlange erfasst werden. Die nachfolgende Auflistung zeigt die Eingänge der Druckaufträge und deren Ausführung:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Warteschlange-Aufgabe_files/figure-html/cell-4-1-a5a47444-102e-4c0e-b28e-8e89425b9b3e.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<section id="aufgabe-2.1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2.1">Aufgabe 2.1:</h2>
+<p>Welche Dokumente werden um 10:26 gedruckt? (Reihenfolge beachten!)</p>
 </section>
-<section id="stapelspeicher" class="level3">
-<h3 class="anchored" data-anchor-id="stapelspeicher">Stapelspeicher</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K2Lm8UFS9_8?si=yD09ZiC2YVh8pv56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7610_Stapelspeicher.pdf">Arbeitsblatt</a><br>
-Quelle: https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/stapelspeicher</p>
-<p><a href="https://link.excalidraw.com/l/7rq4dRSruIo/AIIAt4NbHul">das Whiteboard für die Lösungen</a></p>
-<p><a href="Stapelspeicher-Aufgaben.html">Übungsaufgaben</a></p>
+<section id="aufgabe-2.2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2.2">Aufgabe 2.2:</h2>
+<p>Wann wird das Dokument “Neues Schloss Stuttgart.jpeg“ gedruckt?-</p>
 </section>
-<section id="warteschlange-queue" class="level3">
-<h3 class="anchored" data-anchor-id="warteschlange-queue">Warteschlange (Queue)</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iMs2Fq8O9T4?si=kTknQJGq_ptNkjiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<p><a href="https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7620_Warteschlange.pdf">Arbeitsblatt</a><br>
-Quelle: https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/warteschlange</p>
-<p><a href="https://link.excalidraw.com/l/7rq4dRSruIo/5OTMUBhWJtB">das Whiteboard für die Lösungen</a></p>
-<p><a href="Warteschlange-Aufgabe.html">Übungsaufgaben</a></p>
+<section id="aufgabe-2.3" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2.3">Aufgabe 2.3:</h2>
+<p>Welches Dokument wird um 10:31 gedruckt?</p>
+</section>
+<section id="aufgabe-2.4" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2.4">Aufgabe 2.4:</h2>
+<p>Um 10:34 fällt der Netzwerkdrucker wegen eines Defekts aus. Welche Dokumente befinden sich zu diesem Zeitpunkt in der Warteschlage des Netzwerkdruckers?</p>
 </section>
 </section>
 

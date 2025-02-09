@@ -87,3 +87,17 @@ https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/stapelspeicher
 Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/AIIAt4NbHul)
 
 [Übungsaufgaben](Stapelspeicher-Aufgaben.html)
+
+### Warteschlange (Queue)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iMs2Fq8O9T4?si=kTknQJGq_ptNkjiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+[Arbeitsblatt](https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7620_Warteschlange.pdf)  
+Quelle:
+https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/warteschlange
+
+[das Whiteboard für die
+Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/5OTMUBhWJtB)
+
+[Übungsaufgaben]()
