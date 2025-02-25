@@ -123,7 +123,8 @@ Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/1RfQmRKvA76)
 Quelle:
 https://informatik-bg.de/unterrichtsmaterial/80-graphen/\_Infomaterial-Graphen.pdf
 
-[Übungsblatt](Graphen-Aufgaben.pdf) Quelle:
+[Übungsblatt](Graphen-Aufgaben.pdf)  
+Quelle:
 https://informatik-bg.de/unterrichtsmaterial/80-graphen/Graphen-Aufgaben.docx
 
 [das Whiteboard für die
