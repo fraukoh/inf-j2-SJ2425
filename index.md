@@ -104,7 +104,26 @@ Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/5OTMUBhWJtB)
 
 ### Bäume
 
-[Arbeitsblatt](https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7630_Baeume.pdf)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wSH022YuRQk?si=EL7X9uGwXWfGkenB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+[Arbeitsblatt](https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7630_Baeume.pdf)  
+Quelle:
+https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7630_Baeume.pdf
 
 [das Whiteboard für die
 Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/1RfQmRKvA76)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OQdUyqzJ-XA?si=23i1EGkHKRFh1yx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+### Graphen
+
+[Arbeitsblatt](https://informatik-bg.de/unterrichtsmaterial/80-graphen/_Infomaterial-Graphen.pdf)  
+Quelle:
+https://informatik-bg.de/unterrichtsmaterial/80-graphen/\_Infomaterial-Graphen.pdf
+
+[Übungsblatt](Graphen-Aufgaben.pdf) Quelle:
+https://informatik-bg.de/unterrichtsmaterial/80-graphen/Graphen-Aufgaben.docx
+
+[das Whiteboard für die Lösungen]()
