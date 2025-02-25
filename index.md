@@ -100,4 +100,11 @@ https://informatik-bg.de/jg2-bpe-7-3-dynamische-datenstrukturen/warteschlange
 [das Whiteboard für die
 Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/5OTMUBhWJtB)
 
-[Übungsaufgaben]()
+[Übungsaufgaben](Warteschlange-Aufgabe.html)
+
+### Bäume
+
+[Arbeitsblatt](https://informatik-bg.de/unterrichtsmaterial/76-dynamische-datenstrukturen/arbeitsblatt/7630_Baeume.pdf)
+
+[das Whiteboard für die
+Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/1RfQmRKvA76)
