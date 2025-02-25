@@ -126,4 +126,5 @@ https://informatik-bg.de/unterrichtsmaterial/80-graphen/\_Infomaterial-Graphen.p
 [Übungsblatt](Graphen-Aufgaben.pdf) Quelle:
 https://informatik-bg.de/unterrichtsmaterial/80-graphen/Graphen-Aufgaben.docx
 
-[das Whiteboard für die Lösungen]()
+[das Whiteboard für die
+Lösungen](https://link.excalidraw.com/l/7rq4dRSruIo/1rN7SHBt63D)
