@@ -69,6 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="Vorbereitung-KA1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
+<link rel="stylesheet" href="custom.css">
 </head>
 
 <body class="fullcontent">
@@ -101,7 +102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Erstelle ein Array mit den Namen von fünf Schülern <code>["Anna", "Ben", "Clara", "David", "Eva"]</code> und gib jeden Namen mit dem Text “Schüler:” davor aus.</p>
 <div id="cell-2" class="cell" data-execution_count="1">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>schueler <span class="op">=</span> [<span class="st">"Anna"</span>, <span class="st">"Ben"</span>, <span class="st">"Clara"</span>, <span class="st">"David"</span>, <span class="st">"Eva"</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name <span class="kw">in</span> schueler:</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Schüler: "</span> <span class="op">+</span> name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -120,7 +121,7 @@ Schüler: Eva</code></pre>
 <p>Erstelle ein Array mit den Noten von fünf Schülern <code>noten = [3.0, 2.5, 1.7, 4.0, 2.0]</code> und finde die beste Note.</p>
 <div id="cell-4" class="cell" data-execution_count="3">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>noten <span class="op">=</span> [<span class="fl">3.0</span>, <span class="fl">2.5</span>, <span class="fl">1.7</span>, <span class="fl">4.0</span>, <span class="fl">2.0</span>]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>beste_note <span class="op">=</span> noten[<span class="dv">0</span>]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(noten)):</span>
@@ -138,7 +139,7 @@ Schüler: Eva</code></pre>
 <p>Erstelle ein Array mit den Alter von Schülern. <code>alter = [15, 18, 18, 17, 15, 16]</code> Ermittle die Anzahl der nicht volljährigen Schüler und gebe sie aus.</p>
 <div id="cell-6" class="cell" data-execution_count="4">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>alter <span class="op">=</span> [<span class="dv">15</span>, <span class="dv">18</span>, <span class="dv">18</span>, <span class="dv">17</span>, <span class="dv">15</span>, <span class="dv">16</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>anzahl <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(alter)):</span>
@@ -157,7 +158,7 @@ Schüler: Eva</code></pre>
 <p>Das Fach “Informatik” soll an die zweite Stelle (= nach Mathematik) kommen.</p>
 <div id="cell-8" class="cell" data-execution_count="6">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>faecher <span class="op">=</span> [<span class="st">"Mathematik"</span>, <span class="st">"Biologie"</span>, <span class="st">"Chemie"</span>]</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>faecher.append(<span class="st">"Informatik"</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>stelle <span class="op">=</span> <span class="dv">1</span></span>
@@ -177,7 +178,7 @@ Schüler: Eva</code></pre>
 <p>Erstelle ein Array mit den Hobbys <code>["Fußball", "Lesen", "Schwimmen", "Musik"]</code> und entferne das zweite Element aus diesem Array.</p>
 <div id="cell-10" class="cell" data-execution_count="8">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>hobbys <span class="op">=</span> [<span class="st">"Fußball"</span>, <span class="st">"Lesen"</span>, <span class="st">"Schwimmen"</span>, <span class="st">"Musik"</span>]</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>stelle <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(hobbys)<span class="op">-</span><span class="dv">1</span>):</span>
@@ -195,7 +196,7 @@ Schüler: Eva</code></pre>
 <p>Erstelle ein Array mit den Namen von Projekten <code>["Webseite", "App", "Datenbank", "Spiel"]</code> und sortiere sie alphabetisch mit BubbleSort.</p>
 <div id="cell-12" class="cell" data-execution_count="13">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>projekte <span class="op">=</span> [<span class="st">"Webseite"</span>, <span class="st">"App"</span>, <span class="st">"Datenbank"</span>, <span class="st">"Spiel"</span>]</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">len</span>(projekte) <span class="co"># Länge des Arrays</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -223,7 +224,7 @@ Jeweilige Lehrerkürzel: <code>kuerzel = ["ma", "lu", "kl", "so", "ka"]</code></
 <p>Schreibe ein Programm, dass bei Eingabe eines oben genannten Kürzels der jeweilige Lehrername angezeigt wird.</p>
 <div id="cell-14" class="cell" data-execution_count="14">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>lehrer <span class="op">=</span> [<span class="st">"Lisa Mayer"</span>, <span class="st">"Manfred Lutz"</span>, <span class="st">"Johannes Klug"</span>, <span class="st">"Markus Sommer"</span>, <span class="st">"Jutta Kaiser"</span>]</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>kuerzel <span class="op">=</span> [<span class="st">"ma"</span>, <span class="st">"lu"</span>, <span class="st">"kl"</span>, <span class="st">"so"</span>, <span class="st">"ka"</span>]</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>

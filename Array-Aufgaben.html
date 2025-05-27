@@ -69,6 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="Array-Aufgaben_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
+<link rel="stylesheet" href="custom.css">
 </head>
 
 <body class="fullcontent">
@@ -105,7 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>[“Matthias Schmitt”, “Felix Holzmann”, “Sabrina Eggers”, “Sebastian Wolf”, “Niklas Eisenbaum”, “Florian Kuster”, “Jan Ackerman”, “Erika Ebersbacher”]</p>
 <div id="fd65ff4e-7b68-4889-8b2e-a0b4a07df6b8" class="cell" data-execution_count="4">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>platzierungen <span class="op">=</span> [<span class="st">"Matthias Schmitt"</span>, <span class="st">"Felix Holzmann"</span>, <span class="st">"Sabrina Eggers"</span>, <span class="st">"Sebastian Wolf"</span>, <span class="st">"Niklas Eisenbaum"</span>, <span class="st">"Florian Kuster"</span>, <span class="st">"Jan Ackerman"</span>, <span class="st">"Erika Ebersbacher"</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>platz<span class="op">=</span><span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Platzierung?: "</span>))</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Platzierung:"</span>, platzierungen[platz<span class="op">-</span><span class="dv">1</span>])</span>
@@ -127,7 +128,7 @@ Teilnehmerzahl: 8</code></pre>
 <p>Der Mühlberger SC ist ein Sportverein mit mehreren Abteilungen. Im Jahr 2016 eröffnete der Mühlberger SC die Abteilung DART. Seit 2016 veranstaltet der Verein jährlich einen großen Darts-Event. Bei dem Dart-Event gibt es eine große Gewinnlotterie mit großartigen Sachpreisen. Dafür konnten sich Interessierte ein Los kaufen. Am Abend des Dart-Events findet die Ziehung der Gewinnerlose statt. Der Ziehungsleiter soll die Möglichkeit erhalten, die gezogenen Losnummern in einem Array zu speichern. Nachdem die fünf Losnummern mit Gewinnen gezogen worden sind, sollen sie ausgegeben werden.</p>
 <div id="37b67d92-e586-4ec9-972e-8908e8df215c" class="cell" data-execution_count="1">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Deklaration und Initialisierung des Arrays</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>losnummern <span class="op">=</span> []</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -168,7 +169,7 @@ Gezogene Losnummer:  3146
 Es sollen folgende Angaben in der Konsole ausgegeben werden: Höchste Punktzahl, niedrigste Punktzahl und die durchschnittliche Punktzahl. Die Eingaben der Wurfergebnisse erfolgten ebenfalls über die Konsole (Bei einem Wurf sind maximal 60 Punkte erreichbar.)</p>
 <div id="19ace120-47e3-4dec-aa86-dc919102baef" class="cell" data-execution_count="3">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Deklaration und Initialisierung leeres Array</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>wuerfe <span class="op">=</span> []</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>

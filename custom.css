@@ -1,0 +1,33 @@
+/* Eingabeblock - cell-output-stdin */
+.cell-output.cell-output-stdin:before {
+    content: "Erwartete Eingabe";
+    display: block;
+    background-color: #e8f5e9; /* Hellgrüner Hintergrund */
+    color: #2e7d32; /* Dunkelgrüne Schrift */
+    padding: 5px 10px;
+    font-weight: bold;
+    border-left: 3px solid #2e7d32; /* Dunkelgrüne Randlinie */
+    margin-bottom: 8px;
+}
+
+.cell-output.cell-output-stdin pre {
+    background-color: #f1f8e9; /* Leicht grünlicher Hintergrund */
+    color: #33691e; /* Dunklere grüne Schrift für bessere Lesbarkeit */
+}
+
+/* Ausgabeblock - cell-output-stdout */
+.cell-output.cell-output-stdout:before {
+    content: "Erwartete Ausgabe";
+    display: block;
+    background-color: #e3f2fd; /* Hellblauer Hintergrund */
+    color: #1565c0; /* Dunkelblau für Schrift */
+    padding: 5px 10px;
+    font-weight: bold;
+    border-left: 3px solid #1565c0; /* Dunkelblaue Randlinie */
+    margin-bottom: 8px;
+}
+
+.cell-output.cell-output-stdout pre {
+    background-color: #e8f5fe; /* Leicht bläulicher Hintergrund */
+    color: #0d47a1; /* Dunkleres Blau für bessere Lesbarkeit */
+}
