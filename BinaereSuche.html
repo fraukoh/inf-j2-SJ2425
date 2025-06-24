@@ -69,6 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="BinaereSuche_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
+<link rel="stylesheet" href="custom.css">
 </head>
 
 <body class="fullcontent">
@@ -102,7 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Nachdem der Benutzer seine Losnummer eingegeben hat, ist mit Hilfe der binären Suche zu prüfen, ob diese Losnummer unter den Gewinnlosen ist. Ist dies der Fall, so soll die Meldung “Sie haben gewonnen :-)”, im anderen Fall “Sie haben leider nicht gewonnen :-(” ausgegeben werden.</p>
 <div id="cell-2" class="cell">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ln_gewinne <span class="op">=</span> [<span class="dv">11586</span>, <span class="dv">12569</span>, <span class="dv">22254</span>, <span class="dv">23654</span>, <span class="dv">32541</span>, <span class="dv">55589</span>, <span class="dv">85665</span>, <span class="dv">87512</span>, <span class="dv">98521</span>, <span class="dv">98741</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>losnr <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Gesuchte Losnummer:"</span>))</span>
@@ -135,7 +136,7 @@ In dieser Aufgabenstellung soll nach der Eingabe einer Mitgliedsnummer mit Hilfe
 <p>Wird die eingegebene Mitgliedsnummer gefunden, soll die Meldung „Zutritt gewährt“ ausgegeben werden. Wird die Nummer nicht gefunden, soll die Meldung „Zutritt verweigert“ erscheinen.</p>
 <div id="cell-5" class="cell">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Mitgliedsnummern</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>mnr <span class="op">=</span> [<span class="dv">1001</span>, <span class="dv">1019</span>, <span class="dv">1014</span>, <span class="dv">1009</span>, <span class="dv">1005</span>, <span class="dv">1002</span>, <span class="dv">1018</span>, <span class="dv">1008</span>, <span class="dv">1003</span>, <span class="dv">1010</span>, <span class="dv">1007</span>, <span class="dv">1004</span>, <span class="dv">1020</span>, <span class="dv">1013</span>, <span class="dv">1015</span>, <span class="dv">1011</span>, <span class="dv">1017</span>, <span class="dv">1012</span>, <span class="dv">1006</span>, <span class="dv">1016</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -180,7 +181,7 @@ In dieser Aufgabenstellung soll nach der Eingabe einer Mitgliedsnummer mit Hilfe
 <p>Gegeben ist folgendes Array <code>[10, 12, 8, 11, 3, 15, 5, 1, 2]</code> ### Aufgabe 3.1 Nach wie vielen Vergleichen wird die Zahl 2 im Array mit der linearen Suche gefunden?</p>
 <div id="cell-8" class="cell">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Die Zahl <span class="dv">2</span> wird nach neun Vergleichen gefunden.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
@@ -189,7 +190,7 @@ In dieser Aufgabenstellung soll nach der Eingabe einer Mitgliedsnummer mit Hilfe
 <p>Nennen Sie die Voraussetzung für die Anwendung der binären Suche und bearbeiten Sie das Array entsprechend.</p>
 <div id="cell-10" class="cell">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Voraussetzung für die Anwendung der binären Suche ist ein sortiertes Array.</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Sortiertes Array <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">15</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -202,7 +203,7 @@ In dieser Aufgabenstellung soll nach der Eingabe einer Mitgliedsnummer mit Hilfe
 <p>Sortiertes Array = [1, 2, 3, 5, 8, 10, 11, 12, 15]</p>
 <div id="cell-12" class="cell">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Das gesuchte Element wird nach zwei Vergleichen gefunden</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>

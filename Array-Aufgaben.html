@@ -104,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Der Mühlberger SC ist ein Sportverein mit mehreren Abteilungen. Im Jahr 2016 eröffnete der Mühlberger SC die Abteilung DART. Seit dem Jahr 2017 finden auch Vereinsmeisterschaften statt.</p>
 <p>Die Vereinsmeisterschaft in diesem Jahr war ein großer Erfolg. Die Spieler lieferten sich einen spannenden Wettkampf vor vielen Zuschauern. Der Mühlberger SC möchte die Ergebnisse des Wettkampfs veröffentlichen. Nutzer sollen die Möglichkeit haben, sich an einem Computer eine Platzierung ausgeben zu lassen. Möchte der Nutzer den Erstplatzierten ausgegeben bekommen, muss er bspw. eine „1“ eingeben. Außerdem soll die Teilnehmerzahl angezeigt werden. Die Teilnehmer an der Meisterschaft sind in dem Array platzierungen in der Reihenfolge ihrer Platzierung gespeichert:</p>
 <p>[“Matthias Schmitt”, “Felix Holzmann”, “Sabrina Eggers”, “Sebastian Wolf”, “Niklas Eisenbaum”, “Florian Kuster”, “Jan Ackerman”, “Erika Ebersbacher”]</p>
-<div id="fd65ff4e-7b68-4889-8b2e-a0b4a07df6b8" class="cell" data-execution_count="4">
+<div id="fd65ff4e-7b68-4889-8b2e-a0b4a07df6b8" class="cell">
 <details class="code-fold">
 <summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>platzierungen <span class="op">=</span> [<span class="st">"Matthias Schmitt"</span>, <span class="st">"Felix Holzmann"</span>, <span class="st">"Sabrina Eggers"</span>, <span class="st">"Sebastian Wolf"</span>, <span class="st">"Niklas Eisenbaum"</span>, <span class="st">"Florian Kuster"</span>, <span class="st">"Jan Ackerman"</span>, <span class="st">"Erika Ebersbacher"</span>]</span>
@@ -126,7 +126,7 @@ Teilnehmerzahl: 8</code></pre>
 <section id="implementierung-von-arrays-gewinnziehung" class="level3">
 <h3 class="anchored" data-anchor-id="implementierung-von-arrays-gewinnziehung">Implementierung von Arrays – Gewinnziehung</h3>
 <p>Der Mühlberger SC ist ein Sportverein mit mehreren Abteilungen. Im Jahr 2016 eröffnete der Mühlberger SC die Abteilung DART. Seit 2016 veranstaltet der Verein jährlich einen großen Darts-Event. Bei dem Dart-Event gibt es eine große Gewinnlotterie mit großartigen Sachpreisen. Dafür konnten sich Interessierte ein Los kaufen. Am Abend des Dart-Events findet die Ziehung der Gewinnerlose statt. Der Ziehungsleiter soll die Möglichkeit erhalten, die gezogenen Losnummern in einem Array zu speichern. Nachdem die fünf Losnummern mit Gewinnen gezogen worden sind, sollen sie ausgegeben werden.</p>
-<div id="37b67d92-e586-4ec9-972e-8908e8df215c" class="cell" data-execution_count="1">
+<div id="37b67d92-e586-4ec9-972e-8908e8df215c" class="cell">
 <details class="code-fold">
 <summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Deklaration und Initialisierung des Arrays</span></span>
@@ -167,7 +167,7 @@ Gezogene Losnummer:  3146
 <h1>Implementierung von Arrays – Trainingsanalyse</h1>
 <p>Im Training für die Vereinsmeisterschaften wirft jeder Dartspieler 6 Pfeile auf die Dartscheibe bevor der nächste Dartspieler an der Reihe ist. Sie sollen ein Programm schreiben, das aufgrund der 6 geworfenen Pfeile eine Analyse durchführt.<br>
 Es sollen folgende Angaben in der Konsole ausgegeben werden: Höchste Punktzahl, niedrigste Punktzahl und die durchschnittliche Punktzahl. Die Eingaben der Wurfergebnisse erfolgten ebenfalls über die Konsole (Bei einem Wurf sind maximal 60 Punkte erreichbar.)</p>
-<div id="19ace120-47e3-4dec-aa86-dc919102baef" class="cell" data-execution_count="3">
+<div id="19ace120-47e3-4dec-aa86-dc919102baef" class="cell">
 <details class="code-fold">
 <summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Deklaration und Initialisierung leeres Array</span></span>
@@ -217,6 +217,186 @@ Durchschnittliche Punktzahl: 26.333333333333332</code></pre>
 </div>
 </div>
 <p><a href="Array-Aufgaben_files/figure-html/e1f15f8b-c1a7-4a15-a428-e44cb9319f06-1-78615a06-b0ad-4257-aaa2-e7ac6f09fae3.png">Struktogramm</a></p>
+</section>
+<section id="aufgabe-4-verschlüsselung" class="level1">
+<h1>Aufgabe 4: Verschlüsselung</h1>
+<p>Eine einfache Art der Verschlüsselung ist das Rückwärtsschreiben. Dabei wird ein zu verschlüsselndes Wort rückwärts geschrieben.</p>
+<blockquote class="blockquote">
+<p>Beispiel:<br>
+Klartext: GEHEIM<br>
+Geheimtext: MIEHEG</p>
+</blockquote>
+<p>Schreiben Sie ein python-Programm, das ein beliebiges im Array klartext gespeichertes Wort rückwärts ausgibt. Vervollständigen Sie hierfür den Code:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>klartext <span class="op">=</span> [<span class="st">"G"</span>,<span class="st">"E"</span>,<span class="st">"H"</span>,<span class="st">"E"</span>,<span class="st">"I"</span>,<span class="st">"M"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="db301351" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Lösung</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>klartext <span class="op">=</span> [<span class="st">"G"</span>, <span class="st">"E"</span>, <span class="st">"H"</span>, <span class="st">"E"</span>, <span class="st">"I"</span>, <span class="st">"M"</span>]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(klartext)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>geheim <span class="op">=</span> []</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(laenge<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    geheim.append(klartext[i])</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(geheim)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>['M', 'I', 'E', 'H', 'E', 'G']</code></pre>
+</div>
+</div>
+<details>
+<summary>
+Struktogramm
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Array-Aufgaben_files/figure-html/bf1375b4-1-image.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+</details>
+</section>
+<section id="aufgabe-5-summe" class="level1">
+<h1>Aufgabe 5: Summe</h1>
+<p>Erstellen Sie ein Programm, welches die natürlichen Zahlen von 0 bis 1000 addiert und das Ergebnis ausgibt.</p>
+<div id="90f005c8" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Lösung</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>summe <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">1001</span>, <span class="dv">1</span>):</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    summe <span class="op">=</span> summe <span class="op">+</span> i</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(summe)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>500500</code></pre>
+</div>
+</div>
+<details>
+<summary>
+Struktogramm
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Array-Aufgaben_files/figure-html/3e2094eb-1-image.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+</details>
+</section>
+<section id="aufgabe-6-belohnung" class="level1">
+<h1>Aufgabe 6: Belohnung</h1>
+<p>Oma Ingrid gibt ihrem Enkel für ein Zeugnis eine Belohnung von 50,00 €. Dieser Betrag kann sich aufgrund der gezeigten Leistung aber noch folgendermaßen ändern:</p>
+<ul>
+<li>Ist die beste Note eine 2 oder besser, wird die Belohnung einmalig um 10,00 € erhöht.</li>
+<li>Ist die schlechteste Note eine 5 oder 6, werden 30,00 € der Belohnung einmalig abgezogen.</li>
+</ul>
+<p>Die Noten des Enkelkinds sind in einem Array gegeben. Mit einem Algorithmus soll es Oma Ingrid möglich sein, die Höhe der Belohnung auf Grundlage der Noten zu berechnen. Dieser Algorithmus muss jedes Jahr und somit für alle denkbaren Kombinationen von Noten anwendbar sein.</p>
+<p>Im Jahr 2020 hatte der Enkel folgende Noten: 1, 3, 1, 2, 4, 5, 1, 2</p>
+<p>Entwerfen Sie einen Algorithmus in Form eines Struktogramms, welcher die Höhe der Belohnung auf Grundlage der Noten berechnet und ausgibt.</p>
+<p>Vervollständigen Sie hierfür folgenden Code:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>noten <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">1</span>, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="0b7d11e7" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Lösung</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>noten <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">1</span>,<span class="dv">2</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>belohnung <span class="op">=</span> <span class="dv">50</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>beste <span class="op">=</span> noten[<span class="dv">0</span>]</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>schlecht <span class="op">=</span> noten[<span class="dv">0</span>]</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(noten)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(laenge):</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> noten[i]<span class="op">&lt;</span>beste:</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>        beste <span class="op">=</span> noten[i]</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> noten[i]<span class="op">&gt;</span> schlecht:</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>        schlecht <span class="op">=</span> noten[i]</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> beste <span class="op">&lt;=</span> <span class="dv">2</span>:</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    belohnung <span class="op">=</span> belohnung <span class="op">+</span> <span class="dv">10</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> schlecht <span class="op">&gt;=</span> <span class="dv">5</span>:</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    belohnung <span class="op">=</span> belohnung <span class="op">-</span> <span class="dv">30</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(belohnung)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>30</code></pre>
+</div>
+</div>
+<details>
+<summary>
+Struktogramm
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Array-Aufgaben_files/figure-html/3874b157-1-image.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+</details>
+</section>
+<section id="aufgabe-7-marathon" class="level1">
+<h1>Aufgabe 7: Marathon</h1>
+<p>Lisa trainiert für einen Marathon und geht deswegen jeden Tag laufen. Sie speichert ihre Laufzeiten einer Woche in dem Array /aufzeiten_in_min.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>laufzeiten_in_min <span class="op">=</span> [<span class="dv">60</span>, <span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">50</span>, <span class="dv">45</span>, <span class="dv">120</span>, <span class="dv">30</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Am Ende einer Woche möchte Lisa berechnen, wie viele Kilokalorien sie durch das Laufen verbrannt hat. Nach einer kurzen Internetrecherche hat sie herausgefunden, dass sie bei einer Laufzeit von einer Stunde 700 Kilokalorien verbraucht.</p>
+<p>Entwickeln Sie ein python-Programm, welches Lisa anhand der Laufzeiten im Array <code>laufzeiten_in_min</code> den Kilokalorienverbrauch einer Woche ausgibt.</p>
+<div id="ce5952d2-6207-4d63-bdb1-92af684f4ada" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Lösung</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>lim <span class="op">=</span> [<span class="dv">60</span>, <span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">50</span>, <span class="dv">45</span>, <span class="dv">120</span>, <span class="dv">30</span>]</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span> (<span class="dv">0</span>, <span class="bu">len</span>(lim), <span class="dv">1</span>):</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> k <span class="op">+</span> lim[i]<span class="op">/</span><span class="dv">60</span><span class="op">*</span><span class="dv">700</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Kalorienverbrauch einer Woche:"</span>, k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Kalorienverbrauch einer Woche: 4200.0</code></pre>
+</div>
+</div>
+<details>
+<summary>
+Struktogramm
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Array-Aufgaben_files/figure-html/fd0a2bd6-c062-49fb-bc3e-eea6332295c4-1-33201697-c0c7-4d79-ad91-c669d308a197.png" class="img-fluid figure-img"></p>
+<figcaption>grafik.png</figcaption>
+</figure>
+</div>
+</details>
+</section>
+<section id="aufgabe-8-modellautorennen" class="level1">
+<h1>Aufgabe 8: Modellautorennen</h1>
+<p>In einem Modellautorennen werden fünf Runden gefahren. Dabei werden die jeweiligen Rundenzeiten in einem Array gespeichert.</p>
+<p>Ein Programm soll die schnellste Rundenzeit und die durchschnittliche Rundenzeit ermitteln und ausgeben. Die schnellste Rundenzeit ist in der Variablen <code>schnellste_rundenzeit</code>, die durchschnittliche Rundenzeit ist in der Variablen <code>durchschnittliche_rundenzeit</code> zu speichern.</p>
+<p>Erweitern Sie den nachfolgenden Code, sodass der Algorithmus den oben beschriebenen Sachverhalt abbildet. Verwenden Sie für die Lösung eine Wiederholungsstruktur.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>rundenzeiten <span class="op">=</span> [<span class="fl">25.213</span>, <span class="fl">24.222</span>, <span class="fl">26.123</span>, <span class="fl">24.995</span>, <span class="fl">25.112</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="02fef23a-3696-4397-a291-a2dca90b2bb6" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Lösung</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>rundenzeiten <span class="op">=</span> [<span class="fl">25.213</span>, <span class="fl">24.222</span>, <span class="fl">26.123</span>, <span class="fl">24.995</span>, <span class="fl">25.112</span>]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>schnellste_rundenzeit <span class="op">=</span> rundenzeiten[<span class="dv">0</span>]</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>laenge <span class="op">=</span> <span class="bu">len</span>(rundenzeiten)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>gesamt <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(laenge):</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    gesamt <span class="op">=</span> gesamt <span class="op">+</span> rundenzeiten[i]</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> rundenzeiten[i] <span class="op">&lt;</span> schnellste_rundenzeit:</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>        schnellste_rundenzeit <span class="op">=</span> rundenzeiten[i]</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>durchschnittliche_rundenzeit <span class="op">=</span> gesamt<span class="op">/</span>laenge</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Durchschnittliche Zeit:"</span>, durchschnittliche_rundenzeit)</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Schnellste Zeit:"</span>, schnellste_rundenzeit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Durchschnittliche Zeit: 25.133000000000003
+Schnellste Zeit: 24.222</code></pre>
+</div>
+</div>
+<details>
+<summary>
+Struktogramm
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Array-Aufgaben_files/figure-html/dc1ea1aa-59c5-4bcd-9bb3-ca527ea5dbc4-1-51a44e66-49a5-4803-9339-108a39271b67.png" class="img-fluid figure-img"></p>
+<figcaption>grafik.png</figcaption>
+</figure>
+</div>
+</details>
 </section>
 
 </main>

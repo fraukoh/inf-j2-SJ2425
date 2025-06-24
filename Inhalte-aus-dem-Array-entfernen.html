@@ -69,6 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="Inhalte-aus-dem-Array-entfernen_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
+<link rel="stylesheet" href="custom.css">
 </head>
 
 <body class="fullcontent">
@@ -112,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <div id="f80bc656-46d4-4d32-826e-5ae1417008c9" class="cell" data-execution_count="16">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>zahlen <span class="op">=</span>  [<span class="dv">23</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">12</span>, <span class="dv">100</span>, <span class="dv">35</span>, <span class="dv">67</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>erg <span class="op">=</span> zahlen[<span class="dv">0</span>:<span class="bu">len</span>(zahlen)<span class="op">-</span><span class="dv">1</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(erg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -123,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div id="5afec8bb-eb37-4fe9-a861-e85f7d70b9ba" class="cell" data-execution_count="17">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>zahlen <span class="op">=</span>  [<span class="dv">23</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">12</span>, <span class="dv">100</span>, <span class="dv">35</span>, <span class="dv">67</span>]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>erg <span class="op">=</span> zahlen[<span class="dv">1</span>:<span class="bu">len</span>(zahlen)]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(erg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -134,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div id="988ec1ea-e097-4948-883b-5967b6230417" class="cell" data-execution_count="15">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>zahlen <span class="op">=</span>  [<span class="dv">23</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">12</span>, <span class="dv">100</span>, <span class="dv">35</span>, <span class="dv">67</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>,<span class="bu">len</span>(zahlen)<span class="op">-</span><span class="dv">1</span>):</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    zahlen[i] <span class="op">=</span> zahlen[i<span class="op">+</span><span class="dv">1</span>]</span>
@@ -157,7 +158,7 @@ z. B.: Spieler entfernen an der Stelle mit dem Index: 4 Das Array kader soll dan
 <p>Implementieren Sie eine Funktion <code>entferne_spieler()</code>, mit der ein Spieler aus dem Array entfernt wird.</p>
 <div id="a76e4442-a6ba-4109-9246-625acf16fbed" class="cell" data-execution_count="1">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>Lösung</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Hier den Programmcode eingeben und mit STRG+ENTER ausführen</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>kader <span class="op">=</span> [<span class="st">"Armin"</span>, <span class="st">"Batu"</span>, <span class="st">"Kai"</span>, <span class="st">"Sven"</span>, <span class="st">"Paul"</span>, <span class="st">"Milan"</span>, <span class="st">"Goran"</span>, <span class="st">"Chris"</span>,<span class="st">"Nico"</span>, <span class="st">"Dennis"</span>, <span class="st">"Emin"</span>, <span class="st">"Luca"</span>]</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
