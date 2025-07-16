@@ -1,5 +1,4 @@
 ---
-title: "Array-Einfuegen-Einfuehrung"
 format: revealjs
 ---
 
@@ -81,7 +80,9 @@ index = int(input("An welcher Stelle (Index) soll der Snack stehen? "))
 snacks.append(snack)  # Schritt 1: Am Ende anhängen
 # Schritt 2: Von hinten nach vorne tauschen
 for i in range(len(snacks)-1, index, -1):
-    snacks[i], snacks[i-1] = snacks[i-1], snacks[i]
+    zwischen = snacks[i-1]
+    snacks[i-1] = snacks[i]
+    snacks[i] = zwischen
 print(snacks)
 ```
 
@@ -115,70 +116,3 @@ Stell dir vor, die Snacks stehen in einer Reihe. Wenn jemand Neues reinkommt, st
                             Pizza will nach vorne!
 ```
 
----
-
-## Weiterführende Beispiele und Erklärungen
-
-### Beispiel 1: Mehrere Snacks nacheinander einfügen (immer mit append und Tausch)
-
-```python
-snacks = ["Chips", "Schokolade", "Gummibärchen"]
-# Erst kommt "Pizza" an Stelle 1 rein
-snacks.append("Pizza")
-for i in range(len(snacks)-1, 1, -1):
-    snacks[i], snacks[i-1] = snacks[i-1], snacks[i]
-# Dann kommt "Eis" an Stelle 3 rein
-snacks.append("Eis")
-for i in range(len(snacks)-1, 3, -1):
-    snacks[i], snacks[i-1] = snacks[i-1], snacks[i]
-print(snacks)
-# Ausgabe: ['Chips', 'Pizza', 'Schokolade', 'Eis', 'Gummibärchen']
-```
----
-### Beispiel 2: Einfügen am Anfang der Liste
-
-```python
-snacks = ["Chips", "Schokolade", "Gummibärchen"]
-snacks.append("Kaugummi")
-for i in range(len(snacks)-1, 0, -1):
-    snacks[i], snacks[i-1] = snacks[i-1], snacks[i]
-print(snacks)
-# Ausgabe: ['Kaugummi', 'Chips', 'Schokolade', 'Gummibärchen']
-```
----
-### Beispiel 3: Einfügen am Ende (nur append, kein Tausch nötig)
-
-```python
-snacks = ["Chips", "Schokolade", "Gummibärchen"]
-snacks.append("Limo")
-print(snacks)
-# Ausgabe: ['Chips', 'Schokolade', 'Gummibärchen', 'Limo']
-```
----
-### Beispiel 4: Einfügen an beliebiger Stelle
-
-```python
-snacks = ["Chips", "Schokolade", "Gummibärchen"]
-# Wir wollen "Popcorn" an Stelle 2 einfügen
-snacks.append("Popcorn")
-for i in range(len(snacks)-1, 2, -1):
-    snacks[i], snacks[i-1] = snacks[i-1], snacks[i]
-print(snacks)
-# Ausgabe: ['Chips', 'Schokolade', 'Popcorn', 'Gummibärchen']
-```
-
----
-
-## Übung 2
-
-Schreibe ein Programm, das einen beliebigen Snack an einer beliebigen Stelle in die Snack-Liste einfügt (immer mit append und Tausch). Teste es mit verschiedenen Snacks und Positionen!
-
----
-
-## Merke
-- Das Einfügen in Listen funktioniert mit append und anschließendem Verschieben durch Tauschen.
-- So kannst du an jeder beliebigen Stelle ein neues Element einfügen, ohne insert zu verwenden!
-
----
-
-Viel Erfolg beim Ausprobieren und Programmieren! 
